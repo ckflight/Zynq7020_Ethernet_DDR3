@@ -1,64 +1,73 @@
 ⚡ Zynq-7020 TCP Performance Server + AXI DMA High-Speed Writer
-~390 MB/s DDR Write Throughput — lwIP RAW TCP Perf Server — 1Gbit/s iperf
+~390 MB/s DDR Write Throughput · lwIP RAW TCP Perf Server · 1 Gbit/s iperf
 📸 Block Design
+<p align="center"> <img src="https://github.com/user-attachments/assets/4d9dc7db-beca-43ff-a09d-b0afaa13319d" width="800" /> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/f43510b4-618e-4216-a0a8-e6bc26982d3d" width="420" /> <img src="https://github.com/user-attachments/assets/b3a71f4e-2e61-49ee-b58c-ded47299bd49" width="420" /> </p>
 
-Example:
+This project implements a high-performance TCP performance server on the Zynq-7020, combining:
 
-<img width="907" height="539" alt="Image" src="https://github.com/user-attachments/assets/4d9dc7db-beca-43ff-a09d-b0afaa13319d" />
+lwIP RAW TCP perf server (iperf-compatible)
 
-<img width="550" height="433" alt="Image" src="https://github.com/user-attachments/assets/f43510b4-618e-4216-a0a8-e6bc26982d3d" />
+AXI DMA S2MM writing directly to DDR3
 
-<img width="472" height="438" alt="Image" src="https://github.com/user-attachments/assets/b3a71f4e-2e61-49ee-b58c-ded47299bd49" />
+PL burst generator (64-bit AXI-Stream)
 
-
-This project implements a high-performance TCP Perf Server on Zynq-7020, integrated with:
-
-lwIP RAW TCP perf server (compatible with iperf)
-
-AXI DMA S2MM high-speed writes to DDR3
-
-Programmable Logic burst generator (64-bit AXI-Stream)
-
-GPIO-based cycle timing measurement
+GPIO-based start/end cycle timing
 
 TTC timer profiling
 
-The system reaches ~390 MB/s sustained DDR write speed at FCLK0 = 142.857 MHz, using a 1,048,576-beat × 64-bit streaming burst.
+The design achieves ~390 MB/s sustained DDR write throughput at FCLK0 = 142.857 MHz, using a 1,048,576-beat × 64-bit streaming burst.
 
 🔧 System Overview
 
-The ARM Cortex-A9 (PS) handles TCP/IP (lwIP), perf measurements, and DMA control.
-The Programmable Logic (PL) continuously streams high-speed data into the AXI DMA, which writes directly into DDR3 over the HP port.
+The ARM Cortex-A9 (PS) handles:
 
-Key Capabilities
+TCP/IP networking
 
-TCP Perf Server (iperf-compatible) on port 5001
+iperf traffic & statistics
 
-Steady 940–950 Mbit/s TCP throughput (Gigabit line-rate)
+DMA configuration
 
-~390 MB/s DDR throughput via AXI DMA
+Timing capture & reporting
 
-Full cycle-accurate profiling with PL counter + GPIO
+The Programmable Logic (PL):
 
-TTC timer used for reference timing
+Generates 64-bit AXI stream data
 
-64-bit AXI-Stream data path (8 bytes/beat)
+Streams 1M beats per DMA burst
+
+Captures cycle-accurate timestamps
+
+Drives AXI DMA → DDR3 via HP0
+
+⭐ Key Capabilities
+
+TCP Perf Server on port 5001
+
+940–950 Mbit/s TCP throughput (line-rate)
+
+~390 MB/s DDR write speed via DMA
+
+Precise PL cycle counter for timing
+
+TTC timer for cross-verification
+
+64-bit AXI Stream for maximum throughput
 
 🧩 Block Design Summary
 Peripheral	Description
 Zynq PS (Cortex-A9)	Runs lwIP RAW TCP perf server
-AXI DMA (S2MM)	High-speed streaming to DDR
-FCLK0 = 142.857 MHz	Drives PL data generator & DMA
+AXI DMA (S2MM)	High-speed DDR streaming
+FCLK0 = 142.857 MHz	Drives PL generator & DMA
 AXI HP0 Port	High-bandwidth DDR3 access
-TTC Timer	Tick measurement for profiling
-AXI GPIO (Trigger/Start/End)	Start handshake + cycle timestamps
-PL AXI-Stream Data Generator	Sends 1M beats → DMA → DDR
-Reset Controller	Synchronizes PS-to-PL reset
+TTC Timer	Tick counter for profiling
+AXI GPIO (Trigger / Start / End)	Handshake & timestamp transfer
+PL AXI-Stream Generator	Sends 1M beats → DMA → DDR
+Reset Controller	Syncs PS ↔ PL reset domains
 🚀 Performance Summary
 Metric	Measured Value
 DDR3 Write Speed	≈ 390 MB/s
 DMA Width	64-bit (8 bytes/beat)
-Burst Size	1,048,576 beats → 8 MB total
+Burst Size	1,048,576 beats (8 MB)
 PL Clock (FCLK0)	142.857 MHz
 TCP Throughput	~940 Mbit/s (iperf max)
-CPU Usage	Minimal
+CPU Usage	Low
