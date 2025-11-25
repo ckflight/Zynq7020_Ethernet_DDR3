@@ -1,0 +1,444 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Nov 25 11:15:45 2025
+# Process ID         : 12752
+# Current directory  : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1
+# Command line       : vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file           : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/top_module.vds
+# Journal file       : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-BEUFM6D
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-4850HQ CPU @ 2.30GHz
+# CPU Frequency      : 2295 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17083 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19633 MB
+# Available Virtual  : 6369 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 573.789 ; gain = 217.363
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.2/Vivado/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 600.715 ; gain = 26.926
+Command: read_checkpoint -auto_incremental -incremental C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13380
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1402.406 ; gain = 541.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/sources_1/new/top_module.vhd:50]
+INFO: [Synth 8-3491] module 'arm_design_wrapper' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/hdl/arm_design_wrapper.vhd:15' bound to instance 'arm_design_i' of component 'arm_design_wrapper' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/sources_1/new/top_module.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'arm_design_wrapper' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/hdl/arm_design_wrapper.vhd:51]
+INFO: [Synth 8-3491] module 'arm_design' declared at 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:344' bound to instance 'arm_design_i' of component 'arm_design' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/hdl/arm_design_wrapper.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'arm_design' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:384]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:502]
+INFO: [Synth 8-3491] module 'arm_design_axi_dma_0_1' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_dma_0_1_stub.vhdl:6' bound to instance 'axi_dma_0' of component 'arm_design_axi_dma_0_1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:973]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_dma_0_1' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_dma_0_1_stub.vhdl:61]
+INFO: [Synth 8-3491] module 'arm_design_axi_gpio_0_1' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_gpio_0_1_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'arm_design_axi_gpio_0_1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:1018]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_gpio_0_1' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_gpio_0_1_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'arm_design_axi_gpio_1_1' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_gpio_1_1_stub.vhdl:6' bound to instance 'axi_gpio_1' of component 'arm_design_axi_gpio_1_1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:1041]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_gpio_1_1' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_gpio_1_1_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'arm_design_axi_gpio_2_0' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_gpio_2_0_stub.vhdl:6' bound to instance 'axi_gpio_2' of component 'arm_design_axi_gpio_2_0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:1064]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_gpio_2_0' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_gpio_2_0_stub.vhdl:38]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_mem_intercon_2' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:296]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1T941S1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:58]
+INFO: [Synth 8-3491] module 'arm_design_axi_mem_intercon_imp_auto_pc_0' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_mem_intercon_imp_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'arm_design_axi_mem_intercon_imp_auto_pc_0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_mem_intercon_imp_auto_pc_0' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_mem_intercon_imp_auto_pc_0_stub.vhdl:57]
+INFO: [Synth 8-3491] module 'arm_design_axi_mem_intercon_imp_s00_data_fifo_0' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_stub.vhdl:6' bound to instance 's00_data_fifo' of component 'arm_design_axi_mem_intercon_imp_s00_data_fifo_0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_mem_intercon_imp_s00_data_fifo_0' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_stub.vhdl:56]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1T941S1' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'arm_design_axi_mem_intercon_2' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:296]
+INFO: [Synth 8-3491] module 'arm_design_axi_smc_2' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_smc_2_stub.vhdl:6' bound to instance 'axi_smc' of component 'arm_design_axi_smc_2' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:1130]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_smc_2' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_axi_smc_2_stub.vhdl:134]
+INFO: [Synth 8-3491] module 'arm_design_processing_system7_0_0' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'arm_design_processing_system7_0_0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:1249]
+INFO: [Synth 8-638] synthesizing module 'arm_design_processing_system7_0_0' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_processing_system7_0_0_stub.vhdl:131]
+INFO: [Synth 8-3491] module 'arm_design_rst_ps7_0_100M_0' declared at 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_rst_ps7_0_100M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_100M' of component 'arm_design_rst_ps7_0_100M_0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:1365]
+INFO: [Synth 8-638] synthesizing module 'arm_design_rst_ps7_0_100M_0' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/.Xil/Vivado-12752-DESKTOP-BEUFM6D/realtime/arm_design_rst_ps7_0_100M_0_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'arm_design' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/synth/arm_design.vhd:384]
+INFO: [Synth 8-256] done synthesizing module 'arm_design_wrapper' (0#1) [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/hdl/arm_design_wrapper.vhd:51]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'sysclk_buf' to cell 'IBUFGDS' [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/sources_1/new/top_module.vhd:168]
+WARNING: [Synth 8-614] signal 's_ps_reset_n' is read in the process but is not in the sensitivity list [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/sources_1/new/top_module.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (0#1) [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/sources_1/new/top_module.vhd:50]
+WARNING: [Synth 8-7129] Port ACLK in module arm_design_axi_mem_intercon_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module arm_design_axi_mem_intercon_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1535.805 ; gain = 674.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1535.805 ; gain = 674.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1535.805 ; gain = 674.422
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1535.805 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/processing_system7_0'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/arm_design_axi_smc_2/arm_design_axi_smc_2_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_smc'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/arm_design_axi_smc_2/arm_design_axi_smc_2_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_smc'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_auto_pc_0/arm_design_axi_mem_intercon_imp_auto_pc_0/arm_design_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_auto_pc_0/arm_design_axi_mem_intercon_imp_auto_pc_0/arm_design_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_0'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_1'
+Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0/arm_design_axi_gpio_1_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_2'
+Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0/arm_design_axi_gpio_1_1_in_context.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_2'
+Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDO_R'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDO_R'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TCK'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TCK'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TMS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TMS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDI'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDI'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SDA_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SDA_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SCL_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SCL_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW1'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW1'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW0'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW0'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'IIC_RTC_IRQ_1_B'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'IIC_RTC_IRQ_1_B'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_R_D12'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_R_D12'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
+Finished Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1599.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1599.633 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'arm_design_i/arm_design_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '7.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'arm_design_i/arm_design_i/axi_gpio_1' at clock pin 's_axi_aclk' is different from the actual clock period '7.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'arm_design_i/arm_design_i/axi_gpio_2' at clock pin 's_axi_aclk' is different from the actual clock period '7.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1602.309 ; gain = 740.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1602.309 ; gain = 740.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1602.309 ; gain = 740.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 's2mm_state_reg' in module 'top_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    send |                             0010 |                               01
+                    last |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's2mm_state_reg' using encoding 'one-hot' in module 'top_module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1602.309 ; gain = 740.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               30 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port ACLK in module arm_design_axi_mem_intercon_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module arm_design_axi_mem_intercon_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1602.309 ; gain = 740.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1737.477 ; gain = 876.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1763.914 ; gain = 902.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1763.914 ; gain = 902.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------------+----------+
+|      |BlackBox name                                   |Instances |
++------+------------------------------------------------+----------+
+|1     |arm_design_axi_mem_intercon_imp_auto_pc_0       |         1|
+|2     |arm_design_axi_mem_intercon_imp_s00_data_fifo_0 |         1|
+|3     |arm_design_axi_dma_0_1                          |         1|
+|4     |arm_design_axi_gpio_0_1                         |         1|
+|5     |arm_design_axi_gpio_1_1                         |         1|
+|6     |arm_design_axi_gpio_2_0                         |         1|
+|7     |arm_design_axi_smc_2                            |         1|
+|8     |arm_design_processing_system7_0_0               |         1|
+|9     |arm_design_rst_ps7_0_100M_0                     |         1|
++------+------------------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------------------------+------+
+|      |Cell                                                 |Count |
++------+-----------------------------------------------------+------+
+|1     |arm_design_axi_dma_0_1_bbox                          |     1|
+|2     |arm_design_axi_gpio_0_1_bbox                         |     1|
+|3     |arm_design_axi_gpio_1_1_bbox                         |     1|
+|4     |arm_design_axi_gpio_2_0_bbox                         |     1|
+|5     |arm_design_axi_mem_intercon_imp_auto_pc_0_bbox       |     1|
+|6     |arm_design_axi_mem_intercon_imp_s00_data_fifo_0_bbox |     1|
+|7     |arm_design_axi_smc_2_bbox                            |     1|
+|8     |arm_design_processing_system7_0_0_bbox               |     1|
+|9     |arm_design_rst_ps7_0_100M_0_bbox                     |     1|
+|10    |BUFG                                                 |     1|
+|11    |CARRY4                                               |    31|
+|12    |LUT1                                                 |     7|
+|13    |LUT2                                                 |     4|
+|14    |LUT3                                                 |    31|
+|15    |LUT4                                                 |    49|
+|16    |LUT5                                                 |    38|
+|17    |LUT6                                                 |    10|
+|18    |FDCE                                                 |    27|
+|19    |FDRE                                                 |   203|
+|20    |FDSE                                                 |     2|
+|21    |IBUFGDS                                              |     1|
+|22    |OBUF                                                 |     8|
++------+-----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2000.383 ; gain = 1072.496
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2000.383 ; gain = 1139.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2000.383 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2013.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instance 
+
+Synth Design complete | Checksum: 9dbda45c
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 2013.188 ; gain = 1384.438
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2013.188 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/top_module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 11:17:19 2025...
