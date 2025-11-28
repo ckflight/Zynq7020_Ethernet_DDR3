@@ -471,6 +471,9 @@
           "PCW_CLK3_FREQ": {
             "value": "10000000"
           },
+          "PCW_CORE0_FIQ_INTR": {
+            "value": "0"
+          },
           "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": {
             "value": "15"
           },
