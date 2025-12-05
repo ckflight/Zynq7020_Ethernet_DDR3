@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Nov 25 14:22:24 2025
-# Process ID         : 9976
-# Current directory  : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1
+# Start of session at: Fri Dec  5 15:15:28 2025
+# Process ID         : 2708
+# Current directory  : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1
 # Command line       : vivado.exe -log arm_design_axi_gpio_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arm_design_axi_gpio_0_1.tcl
-# Log file           : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/arm_design_axi_gpio_0_1.vds
-# Journal file       : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1\vivado.jou
+# Log file           : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/arm_design_axi_gpio_0_1.vds
+# Journal file       : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1\vivado.jou
 # Running On         : DESKTOP-BEUFM6D
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 19045
@@ -19,10 +19,10 @@
 # Host memory        : 17083 MB
 # Swap memory        : 2550 MB
 # Total Virtual      : 19633 MB
-# Available Virtual  : 9044 MB
+# Available Virtual  : 6728 MB
 #-----------------------------------------------------------
 source arm_design_axi_gpio_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 575.137 ; gain = 218.688
+create_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 575.176 ; gain = 218.121
 Command: synth_design -top arm_design_axi_gpio_0_1 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -30,11 +30,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12736
+INFO: [Synth 8-7075] Helper process launched with PID 15452
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.828 ; gain = 541.812
+Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 1356.586 ; gain = 538.730
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'arm_design_axi_gpio_0_1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/synth/arm_design_axi_gpio_0_1.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_gpio_0_1' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/synth/arm_design_axi_gpio_0_1.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -50,45 +50,45 @@ INFO: [Synth 8-638] synthesizing module 'arm_design_axi_gpio_0_1' [c:/Users/CK/D
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
-INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1255' bound to instance 'U0' of component 'axi_gpio' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/synth/arm_design_axi_gpio_0_1.vhd:173]
-INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
-INFO: [Synth 8-226] default block is never used [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:447]
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1255' bound to instance 'U0' of component 'axi_gpio' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/synth/arm_design_axi_gpio_0_1.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
+INFO: [Synth 8-226] default block is never used [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:447]
 	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_array_single' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:458]
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_array_single' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:458]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
-INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
-INFO: [Synth 8-256] done synthesizing module 'arm_design_axi_gpio_0_1' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/synth/arm_design_axi_gpio_0_1.vhd:84]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
-INFO: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:485]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
+INFO: [Synth 8-256] done synthesizing module 'arm_design_axi_gpio_0_1' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/synth/arm_design_axi_gpio_0_1.vhd:84]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:485]
 INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single is either unconnected or has no load
 INFO: [Synth 8-7129] Port ABus_Reg[1] in module GPIO_Core is either unconnected or has no load
 INFO: [Synth 8-7129] Port ABus_Reg[2] in module GPIO_Core is either unconnected or has no load
@@ -145,54 +145,54 @@ INFO: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either un
 INFO: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
 INFO: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1487.047 ; gain = 671.031
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 1486.703 ; gain = 668.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1487.047 ; gain = 671.031
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 1486.703 ; gain = 668.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1487.047 ; gain = 671.031
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 1486.703 ; gain = 668.848
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1487.047 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1486.703 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arm_design_axi_gpio_0_1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/arm_design_axi_gpio_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1557.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1552.805 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1557.957 ; gain = 0.727
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1554.621 ; gain = 1.816
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1557.957 ; gain = 741.941
+Finished Constraint Validation : Time (s): cpu = 00:01:02 ; elapsed = 00:01:34 . Memory (MB): peak = 1554.621 ; gain = 736.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1557.957 ; gain = 741.941
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:02 ; elapsed = 00:01:34 . Memory (MB): peak = 1554.621 ; gain = 736.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1557.957 ; gain = 741.941
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:35 . Memory (MB): peak = 1554.621 ; gain = 736.766
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -205,7 +205,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:25 . Memory (MB): peak = 1557.957 ; gain = 741.941
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:36 . Memory (MB): peak = 1554.621 ; gain = 736.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -284,25 +284,25 @@ INFO: [Synth 8-7129] Port gpio2_io_i[2] in module axi_gpio is either unconnected
 INFO: [Synth 8-7129] Port gpio2_io_i[1] in module axi_gpio is either unconnected or has no load
 INFO: [Synth 8-7129] Port gpio2_io_i[0] in module axi_gpio is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 1557.957 ; gain = 741.941
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:48 . Memory (MB): peak = 1554.621 ; gain = 736.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:02:01 . Memory (MB): peak = 1678.500 ; gain = 862.484
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:02:15 . Memory (MB): peak = 1679.801 ; gain = 861.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:02:02 . Memory (MB): peak = 1708.066 ; gain = 892.051
+Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:02:16 . Memory (MB): peak = 1709.547 ; gain = 891.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:02:02 . Memory (MB): peak = 1708.066 ; gain = 892.051
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:02:16 . Memory (MB): peak = 1709.547 ; gain = 891.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -320,37 +320,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -376,16 +376,16 @@ Report Cell Usage:
 |8     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:02:17 . Memory (MB): peak = 1937.887 ; gain = 1050.961
-Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:02:28 . Memory (MB): peak = 1937.887 ; gain = 1121.871
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:02:29 . Memory (MB): peak = 1939.508 ; gain = 1053.734
+Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:02:39 . Memory (MB): peak = 1939.508 ; gain = 1121.652
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1937.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1943.230 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1939.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1946.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -393,12 +393,12 @@ Synth Design complete | Checksum: 7e83fae6
 INFO: [Common 17-83] Releasing license: Synthesis
 144 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:53 . Memory (MB): peak = 1939.305 ; gain = 1352.812
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1939.305 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/arm_design_axi_gpio_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP arm_design_axi_gpio_0_1, cache-ID = 94e58e5f699c49ef
+synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:03:03 . Memory (MB): peak = 1946.887 ; gain = 1358.934
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1946.887 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/arm_design_axi_gpio_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP arm_design_axi_gpio_0_1, cache-ID = 5d408c718364a2e2
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1939.305 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/arm_design_axi_gpio_0_1.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1946.887 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_0_1_synth_1/arm_design_axi_gpio_0_1.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file arm_design_axi_gpio_0_1_utilization_synth.rpt -pb arm_design_axi_gpio_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 14:26:26 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 15:19:37 2025...

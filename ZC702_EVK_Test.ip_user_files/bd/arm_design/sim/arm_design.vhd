@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
---Date        : Tue Nov 25 14:21:22 2025
+--Date        : Fri Dec  5 15:14:24 2025
 --Host        : DESKTOP-BEUFM6D running 64-bit major release  (build 9200)
 --Command     : generate_target arm_design.bd
 --Design      : arm_design
@@ -474,6 +474,7 @@ architecture STRUCTURE of arm_design is
     S_AXI_HP0_WID : in STD_LOGIC_VECTOR ( 5 downto 0 );
     S_AXI_HP0_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP0_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 0 to 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -768,6 +769,7 @@ architecture STRUCTURE of arm_design is
   signal axi_dma_0_M_AXI_S2MM_WREADY : STD_LOGIC;
   signal axi_dma_0_M_AXI_S2MM_WSTRB : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_dma_0_M_AXI_S2MM_WVALID : STD_LOGIC;
+  signal axi_dma_0_s2mm_introut : STD_LOGIC;
   signal axi_mem_intercon_M00_AXI_AWADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_mem_intercon_M00_AXI_AWBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_mem_intercon_M00_AXI_AWCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -893,7 +895,6 @@ architecture STRUCTURE of arm_design is
   signal processing_system7_0_M_AXI_GP0_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_M_AXI_GP0_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_axi_dma_0_s2mm_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_dma_0_s2mm_prmry_reset_out_n_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_smc_M00_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_smc_M00_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -935,7 +936,7 @@ architecture STRUCTURE of arm_design is
   attribute X_INTERFACE_INFO of DDR_we_n : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
   attribute X_INTERFACE_INFO of FCLK_CLK0_0 : signal is "xilinx.com:signal:clock:1.0 CLK.FCLK_CLK0_0 CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK0_0 : signal is "XIL_INTERFACENAME CLK.FCLK_CLK0_0, ASSOCIATED_BUSIF S_AXIS_S2MM_0, CLK_DOMAIN arm_design_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK0_0 : signal is "XIL_INTERFACENAME CLK.FCLK_CLK0_0, ASSOCIATED_BUSIF S_AXIS_S2MM_0, CLK_DOMAIN arm_design_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
   attribute X_INTERFACE_INFO of FIXED_IO_ddr_vrn : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
   attribute X_INTERFACE_MODE : string;
   attribute X_INTERFACE_MODE of FIXED_IO_ddr_vrn : signal is "Master";
@@ -958,7 +959,7 @@ architecture STRUCTURE of arm_design is
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
   attribute X_INTERFACE_INFO of S_AXIS_S2MM_0_tdata : signal is "xilinx.com:interface:axis:1.0 S_AXIS_S2MM_0 TDATA";
   attribute X_INTERFACE_MODE of S_AXIS_S2MM_0_tdata : signal is "Slave";
-  attribute X_INTERFACE_PARAMETER of S_AXIS_S2MM_0_tdata : signal is "XIL_INTERFACENAME S_AXIS_S2MM_0, CLK_DOMAIN arm_design_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.0, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
+  attribute X_INTERFACE_PARAMETER of S_AXIS_S2MM_0_tdata : signal is "XIL_INTERFACENAME S_AXIS_S2MM_0, CLK_DOMAIN arm_design_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 125000000, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.0, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of S_AXIS_S2MM_0_tkeep : signal is "xilinx.com:interface:axis:1.0 S_AXIS_S2MM_0 TKEEP";
   attribute X_INTERFACE_INFO of gpio_ps_in_end_time_tri_i : signal is "xilinx.com:interface:gpio:1.0 gpio_ps_in_end_time TRI_I";
   attribute X_INTERFACE_MODE of gpio_ps_in_end_time_tri_i : signal is "Master";
@@ -990,7 +991,7 @@ axi_dma_0: component arm_design_axi_dma_0_1
       m_axi_s2mm_wready => axi_dma_0_M_AXI_S2MM_WREADY,
       m_axi_s2mm_wstrb(7 downto 0) => axi_dma_0_M_AXI_S2MM_WSTRB(7 downto 0),
       m_axi_s2mm_wvalid => axi_dma_0_M_AXI_S2MM_WVALID,
-      s2mm_introut => NLW_axi_dma_0_s2mm_introut_UNCONNECTED,
+      s2mm_introut => axi_dma_0_s2mm_introut,
       s2mm_prmry_reset_out_n => NLW_axi_dma_0_s2mm_prmry_reset_out_n_UNCONNECTED,
       s_axi_lite_aclk => \^fclk_clk0_0\,
       s_axi_lite_araddr(9 downto 0) => axi_smc_M00_AXI_ARADDR(9 downto 0),
@@ -1267,6 +1268,7 @@ processing_system7_0: component arm_design_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => \^fclk_clk0_0\,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
+      IRQ_F2P(0) => axi_dma_0_s2mm_introut,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => \^fclk_clk0_0\,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),

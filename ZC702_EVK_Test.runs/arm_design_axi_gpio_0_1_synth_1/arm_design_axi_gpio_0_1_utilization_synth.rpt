@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Tue Nov 25 14:26:26 2025
+| Date         : Fri Dec  5 15:19:37 2025
 | Host         : DESKTOP-BEUFM6D running 64-bit major release  (build 9200)
 | Command      : report_utilization -file arm_design_axi_gpio_0_1_utilization_synth.rpt -pb arm_design_axi_gpio_0_1_utilization_synth.pb
 | Design       : arm_design_axi_gpio_0_1

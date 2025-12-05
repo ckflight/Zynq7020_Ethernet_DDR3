@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Nov 26 13:55:23 2025
-# Process ID         : 14844
-# Current directory  : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1
+# Start of session at: Fri Dec  5 15:15:35 2025
+# Process ID         : 13232
+# Current directory  : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1
 # Command line       : vivado.exe -log arm_design_axi_dma_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arm_design_axi_dma_0_1.tcl
-# Log file           : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/arm_design_axi_dma_0_1.vds
-# Journal file       : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1\vivado.jou
+# Log file           : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/arm_design_axi_dma_0_1.vds
+# Journal file       : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1\vivado.jou
 # Running On         : DESKTOP-BEUFM6D
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 19045
@@ -19,10 +19,10 @@
 # Host memory        : 17083 MB
 # Swap memory        : 2550 MB
 # Total Virtual      : 19633 MB
-# Available Virtual  : 6247 MB
+# Available Virtual  : 5235 MB
 #-----------------------------------------------------------
 source arm_design_axi_dma_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 574.801 ; gain = 217.777
+create_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 576.016 ; gain = 223.551
 Command: synth_design -top arm_design_axi_dma_0_1 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -30,11 +30,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11632
+INFO: [Synth 8-7075] Helper process launched with PID 16372
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1362.988 ; gain = 541.070
+Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1360.758 ; gain = 540.438
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'arm_design_axi_dma_0_1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/synth/arm_design_axi_dma_0_1.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'arm_design_axi_dma_0_1' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/synth/arm_design_axi_dma_0_1.vhd:107]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
@@ -67,90 +67,90 @@ INFO: [Synth 8-638] synthesizing module 'arm_design_axi_dma_0_1' [c:/Users/CK/De
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
 	Parameter C_INCREASE_THROUGHPUT bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-3491] module 'axi_dma' declared at 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21634' bound to instance 'U0' of component 'axi_dma' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/synth/arm_design_axi_dma_0_1.vhd:335]
-INFO: [Synth 8-638] synthesizing module 'axi_dma' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21979]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_rst_module' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1589]
+INFO: [Synth 8-3491] module 'axi_dma' declared at 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21634' bound to instance 'U0' of component 'axi_dma' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/synth/arm_design_axi_dma_0_1.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'axi_dma' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21979]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_rst_module' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1589]
 	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
 	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
 	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_cdc_sync_rst' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059' bound to instance 'REG_HRD_RST' of component 'xpm_cdc_sync_rst' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1642]
+INFO: [Synth 8-3491] module 'xpm_cdc_sync_rst' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059' bound to instance 'REG_HRD_RST' of component 'xpm_cdc_sync_rst' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1642]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
 	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
 	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
 	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_cdc_sync_rst' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059' bound to instance 'REG_HRD_RST_OUT' of component 'xpm_cdc_sync_rst' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1667]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_reset' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:641]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_reset' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:641]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_rst_module' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1589]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_reg_module' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:8360]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_lite_if' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2039]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_lite_if' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2039]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_register_s2mm' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:4776]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_register_s2mm' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:4776]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_reg_module' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:8360]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_mngr' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:20387]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_smple_sm' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11850]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_smple_sm' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11850]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_cmdsts_if' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:18680]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_cmdsts_if' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:18680]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_sts_mngr' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:19111]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_sts_mngr' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:19111]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_mngr' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:20387]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_sofeof_gen' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11341]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_sofeof_gen' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11341]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_omit_wrap' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:53212]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_omit_wrap' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:53212]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:50012]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:259]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:259]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2913]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2913]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17859]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized0' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17859]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:25827]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:25827]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:47044]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized1' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized1' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:45156]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44213]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:42655]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:42655]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44213]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44901]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44901]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized2' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized2' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_scatter' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:45156]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:47044]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28518]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set_nodre' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:24311]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set_nodre' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:24311]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
+INFO: [Synth 8-3491] module 'xpm_cdc_sync_rst' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059' bound to instance 'REG_HRD_RST_OUT' of component 'xpm_cdc_sync_rst' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1667]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_reset' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:641]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_reset' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:641]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_rst_module' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:1589]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_reg_module' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:8360]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_lite_if' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2039]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_lite_if' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2039]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_register_s2mm' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:4776]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_register_s2mm' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:4776]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_reg_module' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:8360]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_mngr' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:20387]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_smple_sm' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11850]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_smple_sm' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11850]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_cmdsts_if' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:18680]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_cmdsts_if' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:18680]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_sts_mngr' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:19111]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_sts_mngr' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:19111]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_mngr' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:20387]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_sofeof_gen' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11341]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_sofeof_gen' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:11341]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_omit_wrap' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:53212]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_omit_wrap' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:53212]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:50012]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2913]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2913]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17859]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized0' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized0' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17859]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:25827]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:25827]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:47044]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized1' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized1' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:45156]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44213]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:42655]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:42655]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44213]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44901]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:44901]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized2' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized2' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_scatter' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:45156]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:47044]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28518]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set_nodre' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:24311]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set_nodre' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:24311]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
 	Parameter WRITE_DATA_WIDTH bound to: 14 - type: integer 
@@ -166,7 +166,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [c:/Users/C
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
 	Parameter WAKEUP_TIME bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975' bound to instance 'I_SYNC_FIFOGEN_FIFO' of component 'xpm_fifo_sync' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1449]
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975' bound to instance 'I_SYNC_FIFOGEN_FIFO' of component 'xpm_fifo_sync' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1449]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
@@ -191,8 +191,8 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [C:/
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
 	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 2048 - type: integer 
 	Parameter WRITE_DATA_WIDTH bound to: 74 - type: integer 
@@ -208,7 +208,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameteriz
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
 	Parameter WAKEUP_TIME bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975' bound to instance 'I_SYNC_FIFOGEN_FIFO' of component 'xpm_fifo_sync' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1498]
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975' bound to instance 'I_SYNC_FIFOGEN_FIFO' of component 'xpm_fifo_sync' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1498]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized1' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
@@ -226,72 +226,72 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [C:/
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized1' (0#1) [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf__parameterized0' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf__parameterized0' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_indet_btt' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28518]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10191]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized3' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized3' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10191]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:15835]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized6' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized4' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized4' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:15835]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19147]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:14284]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:14284]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19147]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:50012]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21979]
-INFO: [Synth 8-256] done synthesizing module 'arm_design_axi_dma_0_1' (0#1) [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/synth/arm_design_axi_dma_0_1.vhd:107]
-INFO: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2133]
-INFO: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2135]
-INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2288]
-INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.awready_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2120]
-INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.rdy1_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2249]
-INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_READ.arvalid_re_d1_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2997]
-INFO: [Synth 8-6014] Unused sequential element sg_ftch_error_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:5567]
-INFO: [Synth 8-6014] Unused sequential element sg_updt_error_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:5568]
-INFO: [Synth 8-6014] Unused sequential element GEN_S2MM_DMA_CONTROL.s2mm_desc_flush_i_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:20518]
-INFO: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2237]
-INFO: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2237]
-INFO: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:26470]
-INFO: [Synth 8-6014] Unused sequential element sig_psm_ld_calc2_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:26674]
-INFO: [Synth 8-6014] Unused sequential element sig_child_cmd_reg_empty_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:27130]
-INFO: [Synth 8-6014] Unused sequential element sig_first_child_xfer_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:27675]
-INFO: [Synth 8-6014] Unused sequential element sig_xfer_is_seq_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28174]
-INFO: [Synth 8-6014] Unused sequential element sig_xfer_reg_empty_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28267]
-INFO: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28268]
-INFO: [Synth 8-6014] Unused sequential element sig_sm_ld_scatter_cmd_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:47543]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf__parameterized0' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf__parameterized0' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19643]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_indet_btt' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28518]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10191]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized3' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized3' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10191]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:15835]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized6' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized4' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_v5_1_37_srl_fifo__parameterized4' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:15835]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19147]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:14284]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:14284]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:19147]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:50012]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21979]
+INFO: [Synth 8-256] done synthesizing module 'arm_design_axi_dma_0_1' (0#1) [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/synth/arm_design_axi_dma_0_1.vhd:107]
+INFO: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2133]
+INFO: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2135]
+INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2288]
+INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.awready_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2120]
+INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.rdy1_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2249]
+INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_READ.arvalid_re_d1_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2997]
+INFO: [Synth 8-6014] Unused sequential element sg_ftch_error_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:5567]
+INFO: [Synth 8-6014] Unused sequential element sg_updt_error_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:5568]
+INFO: [Synth 8-6014] Unused sequential element GEN_S2MM_DMA_CONTROL.s2mm_desc_flush_i_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:20518]
+INFO: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2237]
+INFO: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2237]
+INFO: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:26470]
+INFO: [Synth 8-6014] Unused sequential element sig_psm_ld_calc2_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:26674]
+INFO: [Synth 8-6014] Unused sequential element sig_child_cmd_reg_empty_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:27130]
+INFO: [Synth 8-6014] Unused sequential element sig_first_child_xfer_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:27675]
+INFO: [Synth 8-6014] Unused sequential element sig_xfer_is_seq_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28174]
+INFO: [Synth 8-6014] Unused sequential element sig_xfer_reg_empty_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28267]
+INFO: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:28268]
+INFO: [Synth 8-6014] Unused sequential element sig_sm_ld_scatter_cmd_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:47543]
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3087]
 WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
 WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:982]
 WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
-INFO: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1586]
+INFO: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1586]
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3087]
 WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
 WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:982]
 WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
-INFO: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1586]
-INFO: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10601]
-INFO: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10608]
-INFO: [Synth 8-6014] Unused sequential element sig_next_last_strb_reg_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17126]
-INFO: [Synth 8-6014] Unused sequential element sig_next_eof_reg_reg was removed.  [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17131]
-INFO: [Synth 8-3848] Net m_axi_sg_awuser in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21824]
-INFO: [Synth 8-3848] Net m_axi_sg_aruser in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21850]
-INFO: [Synth 8-3848] Net m_axis_mm2s_tuser in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21895]
-INFO: [Synth 8-3848] Net m_axis_mm2s_tid in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21896]
-INFO: [Synth 8-3848] Net m_axis_mm2s_tdest in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21897]
-INFO: [Synth 8-3848] Net strm_valid in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22540]
-INFO: [Synth 8-3848] Net bd_eq in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22533]
-INFO: [Synth 8-3848] Net s2mm_desc_info_in in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22513]
-INFO: [Synth 8-3848] Net m_axis_ftch2_desc_available in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22442]
+INFO: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1586]
+INFO: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10601]
+INFO: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10608]
+INFO: [Synth 8-6014] Unused sequential element sig_next_last_strb_reg_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17126]
+INFO: [Synth 8-6014] Unused sequential element sig_next_eof_reg_reg was removed.  [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:17131]
+INFO: [Synth 8-3848] Net m_axi_sg_awuser in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21824]
+INFO: [Synth 8-3848] Net m_axi_sg_aruser in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21850]
+INFO: [Synth 8-3848] Net m_axis_mm2s_tuser in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21895]
+INFO: [Synth 8-3848] Net m_axis_mm2s_tid in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21896]
+INFO: [Synth 8-3848] Net m_axis_mm2s_tdest in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21897]
+INFO: [Synth 8-3848] Net strm_valid in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22540]
+INFO: [Synth 8-3848] Net bd_eq in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22533]
+INFO: [Synth 8-3848] Net s2mm_desc_info_in in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22513]
+INFO: [Synth 8-3848] Net m_axis_ftch2_desc_available in module/entity axi_dma does not have driver. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:22442]
 INFO: [Synth 8-7129] Port debeat_saddr_lsb[2] in module axi_datamover_wr_demux is either unconnected or has no load
 INFO: [Synth 8-7129] Port debeat_saddr_lsb[1] in module axi_datamover_wr_demux is either unconnected or has no load
 INFO: [Synth 8-7129] Port debeat_saddr_lsb[0] in module axi_datamover_wr_demux is either unconnected or has no load
@@ -394,56 +394,56 @@ INFO: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected
 INFO: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1560.777 ; gain = 738.859
+Finished RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 1558.434 ; gain = 738.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1560.777 ; gain = 738.859
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:01:06 . Memory (MB): peak = 1558.434 ; gain = 738.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1560.777 ; gain = 738.859
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:41 ; elapsed = 00:01:06 . Memory (MB): peak = 1558.434 ; gain = 738.113
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.586 . Memory (MB): peak = 1560.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1558.434 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/dont_touch.xdc]
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'U0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/2025.2/Vivado/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arm_design_axi_dma_0_1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/arm_design_axi_dma_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 4 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1641.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1640.457 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.285 . Memory (MB): peak = 1642.324 ; gain = 0.785
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.424 . Memory (MB): peak = 1640.566 ; gain = 0.109
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 1642.324 ; gain = 820.406
+Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:57 . Memory (MB): peak = 1640.566 ; gain = 820.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 1642.324 ; gain = 820.406
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:57 . Memory (MB): peak = 1640.566 ; gain = 820.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 1642.324 ; gain = 820.406
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:57 . Memory (MB): peak = 1640.566 ; gain = 820.246
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_psm_state_reg' in module 'axi_datamover_ibttcc'
@@ -513,7 +513,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1642.324 ; gain = 820.406
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:24 ; elapsed = 00:02:04 . Memory (MB): peak = 1640.566 ; gain = 820.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -607,7 +607,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/GEN_CMD_BTT_EQL_23.cmnd_data_reg' and it is trimmed from '153' to '75' bits. [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:12054]
+INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/GEN_CMD_BTT_EQL_23.cmnd_data_reg' and it is trimmed from '153' to '75' bits. [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:12054]
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -619,7 +619,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-3332] Sequential element (I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/FSM_onehot_sig_csm_state_reg[3]) is unused and will be removed from module axi_dma.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:47 . Memory (MB): peak = 1642.324 ; gain = 820.406
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:02:42 . Memory (MB): peak = 1640.566 ; gain = 820.246
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -652,7 +652,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:57 ; elapsed = 00:02:05 . Memory (MB): peak = 1715.391 ; gain = 893.473
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:16 ; elapsed = 00:03:07 . Memory (MB): peak = 1723.133 ; gain = 902.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -661,7 +661,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:13 . Memory (MB): peak = 1798.004 ; gain = 976.086
+Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:03:21 . Memory (MB): peak = 1805.531 ; gain = 985.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -689,7 +689,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:08 ; elapsed = 00:02:16 . Memory (MB): peak = 1808.062 ; gain = 986.145
+Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:03:25 . Memory (MB): peak = 1815.566 ; gain = 995.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -707,37 +707,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 1999.785 ; gain = 1177.867
+Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:03:36 . Memory (MB): peak = 2008.262 ; gain = 1187.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 1999.785 ; gain = 1177.867
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:42 ; elapsed = 00:03:36 . Memory (MB): peak = 2008.262 ; gain = 1187.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 1999.785 ; gain = 1177.867
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:43 ; elapsed = 00:03:37 . Memory (MB): peak = 2008.262 ; gain = 1187.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 1999.785 ; gain = 1177.867
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:43 ; elapsed = 00:03:37 . Memory (MB): peak = 2008.262 ; gain = 1187.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 2003.793 ; gain = 1181.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:03:37 . Memory (MB): peak = 2012.223 ; gain = 1191.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 2003.793 ; gain = 1181.875
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:43 ; elapsed = 00:03:37 . Memory (MB): peak = 2012.223 ; gain = 1191.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -788,18 +788,18 @@ Report Cell Usage:
 |14    |FDSE     |    51|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 2003.793 ; gain = 1181.875
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:43 ; elapsed = 00:03:37 . Memory (MB): peak = 2012.223 ; gain = 1191.902
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:02:17 . Memory (MB): peak = 2003.793 ; gain = 1100.328
-Synthesis Optimization Complete : Time (s): cpu = 00:02:21 ; elapsed = 00:02:29 . Memory (MB): peak = 2003.793 ; gain = 1181.875
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:03:17 . Memory (MB): peak = 2012.223 ; gain = 1109.770
+Synthesis Optimization Complete : Time (s): cpu = 00:02:43 ; elapsed = 00:03:37 . Memory (MB): peak = 2012.223 ; gain = 1191.902
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.294 . Memory (MB): peak = 2008.879 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.390 . Memory (MB): peak = 2017.336 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2016.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2024.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
@@ -809,12 +809,12 @@ Synth Design complete | Checksum: 23ccfe10
 INFO: [Common 17-83] Releasing license: Synthesis
 328 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:02:47 . Memory (MB): peak = 2016.539 ; gain = 1429.523
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2016.539 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/arm_design_axi_dma_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP arm_design_axi_dma_0_1, cache-ID = 75ea93cc8b9e0137
+synth_design: Time (s): cpu = 00:02:58 ; elapsed = 00:04:03 . Memory (MB): peak = 2024.992 ; gain = 1437.016
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2024.992 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/arm_design_axi_dma_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP arm_design_axi_dma_0_1, cache-ID = 11ddf926361ab9c8
 INFO: [Coretcl 2-1174] Renamed 65 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2016.539 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/arm_design_axi_dma_0_1.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2024.992 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_dma_0_1_synth_1/arm_design_axi_dma_0_1.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file arm_design_axi_dma_0_1_utilization_synth.rpt -pb arm_design_axi_dma_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 26 13:59:02 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 15:20:50 2025...

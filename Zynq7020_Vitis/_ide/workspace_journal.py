@@ -57,3 +57,9 @@ status = platform.build()
 comp = client.get_component(name="dma_ddr_interrupt_benchmark")
 comp.build()
 
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../../top_module.xsa")
+
+status = platform.build()
+
+comp.build()
+

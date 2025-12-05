@@ -2032,6 +2032,9 @@
         "inst_hier_path": "axi_gpio_2",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "1"
+          },
           "C_GPIO_WIDTH": {
             "value": "32"
           },
@@ -2135,18 +2138,18 @@
         "ports": [
           "processing_system7_0/FCLK_CLK0",
           "FCLK_CLK0_0",
-          "rst_ps7_0_100M/slowest_sync_clk",
+          "axi_dma_0/s_axi_lite_aclk",
+          "axi_dma_0/m_axi_s2mm_aclk",
           "axi_gpio_0/s_axi_aclk",
           "axi_gpio_1/s_axi_aclk",
           "axi_gpio_2/s_axi_aclk",
-          "axi_dma_0/s_axi_lite_aclk",
-          "axi_dma_0/m_axi_s2mm_aclk",
           "axi_mem_intercon/ACLK",
           "axi_mem_intercon/S00_ACLK",
           "axi_mem_intercon/M00_ACLK",
           "axi_smc/aclk",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "processing_system7_0/S_AXI_HP0_ACLK"
+          "processing_system7_0/S_AXI_HP0_ACLK",
+          "rst_ps7_0_100M/slowest_sync_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2158,10 +2161,10 @@
       "rst_ps7_0_100M_peripheral_aresetn": {
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
+          "axi_dma_0/axi_resetn",
           "axi_gpio_0/s_axi_aresetn",
           "axi_gpio_1/s_axi_aresetn",
           "axi_gpio_2/s_axi_aresetn",
-          "axi_dma_0/axi_resetn",
           "axi_mem_intercon/ARESETN",
           "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/M00_ARESETN",

@@ -1,7 +1,7 @@
-set_property SRC_FILE_INFO {cfile:c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc rfile:../../../ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc rfile:../../../ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter clk_fpga_0 0.19998
+set_input_jitter clk_fpga_0 0.24
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "C12" [get_ports "MIO[53]"]
 set_property src_info {type:SCOPED_XDC file:1 line:37 export:INPUT save:INPUT read:READ} [current_design]

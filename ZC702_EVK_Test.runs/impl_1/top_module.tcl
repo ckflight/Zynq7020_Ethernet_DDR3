@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module.tcl"
+  variable script "C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module.tcl"
   variable category "vivado_impl"
 }
 
@@ -106,7 +106,6 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param general.usePosixSpawnForFork 1
   set_param chipscope.maxJobs 2
-  set_param bd.open.in_stealth_mode 1
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg484-1
@@ -115,20 +114,20 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.cache/wt [current_project]
-  set_property parent.project_path C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.xpr [current_project]
-  set_property ip_output_repo C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.cache/wt [current_project]
+  set_property parent.project_path C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.xpr [current_project]
+  set_property ip_output_repo C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1/top_module.dcp
+  add_files -quiet C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/synth_1/top_module.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/sources_1/bd/arm_design/arm_design.bd
+  add_files C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/sources_1/bd/arm_design/arm_design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc
+  read_xdc C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

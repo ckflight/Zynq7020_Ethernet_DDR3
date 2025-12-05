@@ -36,4 +36,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==arm_design_
 # IP: bd/arm_design/ip/arm_design_axi_mem_intercon_imp_auto_pc_0/arm_design_axi_mem_intercon_imp_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==arm_design_axi_mem_intercon_imp_auto_pc_0 || ORIG_REF_NAME==arm_design_axi_mem_intercon_imp_auto_pc_0} -quiet] -quiet
 
-# XDC: c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/arm_design_ooc.xdc
+# XDC: c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/arm_design_ooc.xdc

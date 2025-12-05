@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Nov 26 14:23:54 2025
-# Process ID         : 14788
-# Current directory  : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1
+# Start of session at: Fri Dec  5 15:24:31 2025
+# Process ID         : 1344
+# Current directory  : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1
 # Command line       : vivado.exe -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
-# Log file           : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module.vdi
-# Journal file       : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1\vivado.jou
+# Log file           : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module.vdi
+# Journal file       : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1\vivado.jou
 # Running On         : DESKTOP-BEUFM6D
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 19045
@@ -17,371 +17,370 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 17083 MB
-# Swap memory        : 2550 MB
-# Total Virtual      : 19633 MB
-# Available Virtual  : 5882 MB
+# Swap memory        : 4526 MB
+# Total Virtual      : 21610 MB
+# Available Virtual  : 9464 MB
 #-----------------------------------------------------------
 source top_module.tcl -notrace
-create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 573.863 ; gain = 220.059
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 576.719 ; gain = 220.953
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.2/Vivado/data/ip'.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 629.520 ; gain = 55.656
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 631.477 ; gain = 54.758
 Command: link_design -top top_module -part xc7z020clg484-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.dcp' for cell 'arm_design_i/arm_design_i/axi_dma_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1.dcp' for cell 'arm_design_i/arm_design_i/axi_gpio_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1.dcp' for cell 'arm_design_i/arm_design_i/axi_gpio_1'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0.dcp' for cell 'arm_design_i/arm_design_i/axi_gpio_2'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/arm_design_axi_smc_2.dcp' for cell 'arm_design_i/arm_design_i/axi_smc'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.dcp' for cell 'arm_design_i/arm_design_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0.dcp' for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_auto_pc_0/arm_design_axi_mem_intercon_imp_auto_pc_0.dcp' for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/auto_pc'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0.dcp' for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.861 . Memory (MB): peak = 933.688 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.dcp' for cell 'arm_design_i/arm_design_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1.dcp' for cell 'arm_design_i/arm_design_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1.dcp' for cell 'arm_design_i/arm_design_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0.dcp' for cell 'arm_design_i/arm_design_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/arm_design_axi_smc_2.dcp' for cell 'arm_design_i/arm_design_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.dcp' for cell 'arm_design_i/arm_design_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0.dcp' for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_auto_pc_0/arm_design_axi_mem_intercon_imp_auto_pc_0.dcp' for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0.dcp' for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.794 . Memory (MB): peak = 933.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 137 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2025.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc] for cell 'arm_design_i/arm_design_i/processing_system7_0/inst'
-WARNING: [Vivado 12-2489] -input_jitter contains time 0.199980 which will be rounded to 0.200 to ensure it is an integer multiple of 1 picosecond [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc:21]
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc] for cell 'arm_design_i/arm_design_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0_board.xdc] for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0_board.xdc] for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M/U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/bd_0/ip/ip_1/bd_75f8_psr_aclk_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/bd_0/ip/ip_1/bd_75f8_psr_aclk_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/smartconnect.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/smartconnect.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_0/U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_0/U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_1/U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_1/U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_2/U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_2/U0'
-Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc]
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDO_R'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:22]
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc] for cell 'arm_design_i/arm_design_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_processing_system7_0_0/arm_design_processing_system7_0_0.xdc] for cell 'arm_design_i/arm_design_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0_board.xdc] for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_rst_ps7_0_100M_0/arm_design_rst_ps7_0_100M_0_board.xdc] for cell 'arm_design_i/arm_design_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/bd_0/ip/ip_1/bd_75f8_psr_aclk_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/bd_0/ip/ip_1/bd_75f8_psr_aclk_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/smartconnect.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_smc_2/smartconnect.xdc] for cell 'arm_design_i/arm_design_i/axi_smc/inst'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_0_1/arm_design_axi_gpio_0_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_1_1/arm_design_axi_gpio_1_1_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_gpio_2_0/arm_design_axi_gpio_2_0_board.xdc] for cell 'arm_design_i/arm_design_i/axi_gpio_2/U0'
+Parsing XDC File [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDO_R'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:22]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDO_R'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDO_R'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:23]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TCK'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TCK'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TCK'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TCK'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TMS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TMS'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:26]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TMS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TMS'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:27]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDI'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDI'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:28]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDI'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'PL_PJTAG_TDI'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:29]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'IIC_SDA_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SDA_MAIN_LS'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:30]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'IIC_SDA_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SDA_MAIN_LS'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:31]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'IIC_SCL_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SCL_MAIN_LS'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:32]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'IIC_SCL_MAIN_LS'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'IIC_SCL_MAIN_LS'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:33]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:36]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:37]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:38]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA23_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:39]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:40]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:41]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:42]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:43]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA26_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:43]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:44]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:45]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:46]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA22_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:47]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:48]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:50]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA25_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:51]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:52]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:53]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA29_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:55]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:56]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:57]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:58]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA31_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:59]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:60]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:61]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:62]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA33_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:63]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:64]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:65]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:66]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA18_CC_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:67]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'USRCLK_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:68]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'USRCLK_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:69]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'USRCLK_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:70]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'USRCLK_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'USRCLK_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:71]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:73]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:74]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_CLK1_M2C_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:75]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:76]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:77]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:78]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:79]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA17_CC_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:79]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:80]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:80]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:81]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:81]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:82]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:82]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:83]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA27_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:83]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:84]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:85]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:86]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA28_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:87]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:88]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:89]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:90]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:91]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA30_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:91]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:92]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:93]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:94]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA32_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:95]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:96]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:97]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:98]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:98]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:99]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA19_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:99]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:100]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:101]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:102]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA20_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:103]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:104]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:105]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:106]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:107]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA21_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:107]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:108]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:108]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:109]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:109]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:110]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:110]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:111]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA24_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:111]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW1'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:114]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW1'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:114]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW1'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:115]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW1'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:115]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW0'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:116]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW0'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:116]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW0'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_DIP_SW0'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:117]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'IIC_RTC_IRQ_1_B'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'IIC_RTC_IRQ_1_B'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:120]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'IIC_RTC_IRQ_1_B'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:121]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'IIC_RTC_IRQ_1_B'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:121]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'HDMI_R_D12'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:122]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_R_D12'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:122]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'HDMI_R_D12'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:123]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_R_D12'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:123]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:124]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:124]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_P'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:125]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_P'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:125]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:126]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:126]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_N'. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'FMC2_LPC_LA07_N'. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
-Finished Parsing XDC File [C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc]
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
-Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst'
-Finished Parsing XDC File [c:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst'
-INFO: [Project 1-1714] 84 XPM XDC files have been applied to the design.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc:127]
+Finished Parsing XDC File [C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc]
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_dma_0_1/arm_design_axi_dma_0_1_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_dma_0/U0'
+Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst'
+Finished Parsing XDC File [c:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.gen/sources_1/bd/arm_design/ip/arm_design_axi_mem_intercon_imp_s00_data_fifo_0/arm_design_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc] for cell 'arm_design_i/arm_design_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst'
+INFO: [Project 1-1714] 81 XPM XDC files have been applied to the design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1649.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1650.359 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 17 instances were transformed.
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 13 instances
+  A total of 20 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
 
-23 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+23 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1649.277 ; gain = 1019.758
+link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1650.359 ; gain = 1018.883
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -392,50 +391,50 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1649.277 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1650.359 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 2141f6ca8
+Ending Cache Timing Information Task | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.936 . Memory (MB): peak = 1649.277 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.765 . Memory (MB): peak = 1650.359 ; gain = 0.000
 
 Starting Logic Optimization Task
 
 Phase 1 Initialization
 
 Phase 1.1 Core Generation And Design Setup
-Phase 1.1 Core Generation And Design Setup | Checksum: 2141f6ca8
+Phase 1.1 Core Generation And Design Setup | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2071.891 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2076.102 ; gain = 0.000
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2141f6ca8
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2071.891 ; gain = 0.000
-Phase 1 Initialization | Checksum: 2141f6ca8
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2076.102 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2071.891 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2076.102 ; gain = 0.000
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Detect if minReqCache needed
-Phase 2.1 Detect if minReqCache needed | Checksum: 2141f6ca8
+Phase 2.1 Detect if minReqCache needed | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.076 . Memory (MB): peak = 2071.914 ; gain = 0.023
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2076.129 ; gain = 0.027
 
 Phase 2.2 Timer Update
-Phase 2.2 Timer Update | Checksum: 2141f6ca8
+Phase 2.2 Timer Update | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.297 . Memory (MB): peak = 2071.914 ; gain = 0.023
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.297 . Memory (MB): peak = 2076.129 ; gain = 0.027
 
 Phase 2.3 Timing Data Collection
-Phase 2.3 Timing Data Collection | Checksum: 2141f6ca8
+Phase 2.3 Timing Data Collection | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.327 . Memory (MB): peak = 2071.914 ; gain = 0.023
-Phase 2 Timer Update And Timing Data Collection | Checksum: 2141f6ca8
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.316 . Memory (MB): peak = 2076.129 ; gain = 0.027
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1698518f3
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.331 . Memory (MB): peak = 2071.914 ; gain = 0.023
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.319 . Memory (MB): peak = 2076.129 ; gain = 0.027
 
 Phase 3 Retarget
 INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
@@ -443,75 +442,75 @@ INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transfo
 INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 24 pins
 INFO: [Opt 31-138] Pushed 6 inverter(s) to 25 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 1a7779dbc
+Phase 3 Retarget | Checksum: 2136970a0
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.905 . Memory (MB): peak = 2071.914 ; gain = 0.023
-Retarget | Checksum: 1a7779dbc
-INFO: [Opt 31-389] Phase Retarget created 16 cells and removed 122 cells
-INFO: [Opt 31-1021] In phase Retarget, 165 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.713 . Memory (MB): peak = 2076.129 ; gain = 0.027
+Retarget | Checksum: 2136970a0
+INFO: [Opt 31-389] Phase Retarget created 16 cells and removed 103 cells
+INFO: [Opt 31-1021] In phase Retarget, 147 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: 139353ae7
+Phase 4 Constant propagation | Checksum: 1bc6572e0
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2071.914 ; gain = 0.023
-Constant propagation | Checksum: 139353ae7
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.884 . Memory (MB): peak = 2076.129 ; gain = 0.027
+Constant propagation | Checksum: 1bc6572e0
 INFO: [Opt 31-389] Phase Constant propagation created 45 cells and removed 121 cells
-INFO: [Opt 31-1021] In phase Constant propagation, 165 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+INFO: [Opt 31-1021] In phase Constant propagation, 147 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Sweep
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2071.914 ; gain = 0.000
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2071.914 ; gain = 0.000
-Phase 5 Sweep | Checksum: 1316c6ad3
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 5 Sweep | Checksum: 20b864f57
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2071.914 ; gain = 0.023
-Sweep | Checksum: 1316c6ad3
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 282 cells
-INFO: [Opt 31-1021] In phase Sweep, 288 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
+Sweep | Checksum: 20b864f57
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 262 cells
+INFO: [Opt 31-1021] In phase Sweep, 247 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 6 BUFG optimization
-Phase 6 BUFG optimization | Checksum: 1316c6ad3
+Phase 6 BUFG optimization | Checksum: 20b864f57
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.914 ; gain = 0.023
-BUFG optimization | Checksum: 1316c6ad3
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
+BUFG optimization | Checksum: 20b864f57
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 1316c6ad3
+Phase 7 Shift Register Optimization | Checksum: 20b864f57
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.914 ; gain = 0.023
-Shift Register Optimization | Checksum: 1316c6ad3
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
+Shift Register Optimization | Checksum: 20b864f57
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: 18d7df173
+Phase 8 Post Processing Netlist | Checksum: 26f55eab7
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.914 ; gain = 0.023
-Post Processing Netlist | Checksum: 18d7df173
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
+Post Processing Netlist | Checksum: 26f55eab7
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
-INFO: [Opt 31-1021] In phase Post Processing Netlist, 198 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 178 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 22f1f6609
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1a38bb7aa
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.914 ; gain = 0.023
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2071.914 ; gain = 0.000
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 22f1f6609
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1a38bb7aa
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.914 ; gain = 0.023
-Phase 9 Finalization | Checksum: 22f1f6609
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
+Phase 9 Finalization | Checksum: 1a38bb7aa
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.914 ; gain = 0.023
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
 Opt_design Change Summary
 =========================
 
@@ -519,18 +518,18 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |              16  |             122  |                                            165  |
-|  Constant propagation         |              45  |             121  |                                            165  |
-|  Sweep                        |               0  |             282  |                                            288  |
+|  Retarget                     |              16  |             103  |                                            147  |
+|  Constant propagation         |              45  |             121  |                                            147  |
+|  Sweep                        |               0  |             262  |                                            247  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
-|  Post Processing Netlist      |               0  |               0  |                                            198  |
+|  Post Processing Netlist      |               0  |               0  |                                            178  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 22f1f6609
+Ending Logic Optimization Task | Checksum: 1a38bb7aa
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.914 ; gain = 0.023
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2076.129 ; gain = 0.027
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -543,46 +542,46 @@ Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 5 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 14
-Ending PowerOpt Patch Enables Task | Checksum: 22f1f6609
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 10
+Ending PowerOpt Patch Enables Task | Checksum: 1a38bb7aa
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 22f1f6609
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1a38bb7aa
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2073.590 ; gain = 1.676
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 22f1f6609
+Ending Final Cleanup Task | Checksum: 1a38bb7aa
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-54 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+54 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2073.590 ; gain = 424.312
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 2076.129 ; gain = 425.770
 INFO: [Vivado 12-24828] Executing command : report_drc -file top_module_drc_opted.rpt -pb top_module_drc_opted.pb -rpx top_module_drc_opted.rpx
 Command: report_drc -file top_module_drc_opted.rpt -pb top_module_drc_opted.pb -rpx top_module_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module_drc_opted.rpt.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module_drc_opted.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2073.590 ; gain = 0.000
-generate_parallel_reports: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2073.590 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2076.129 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2076.129 ; gain = 0.000
 Writing XDEF routing.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2076.129 ; gain = 0.000
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.182 . Memory (MB): peak = 2073.590 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module_opt.dcp' has been generated.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.131 . Memory (MB): peak = 2076.129 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module_opt.dcp' has been generated.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -593,7 +592,7 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 14 Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
@@ -602,63 +601,63 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 16cdb3a20
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12f0963c7
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 149ceedce
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1be4df3c0
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1b444577e
+Phase 1.3 Build Placer Netlist Model | Checksum: 292413e0e
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1b444577e
+Phase 1.4 Constrain Clocks/Macros | Checksum: 292413e0e
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1b444577e
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 292413e0e
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1f9d933f1
+Phase 2.1 Floorplanning | Checksum: 216a7576f
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1ae872a3a
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2a48f6bb2
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 1ac86c52d
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 2a48f6bb2
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2.4 Global Place Phase1
-Phase 2.4 Global Place Phase1 | Checksum: 16150ea07
+Phase 2.4 Global Place Phase1 | Checksum: 20b3cb023
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2.5 Global Place Phase2
 
 Phase 2.5.1 UpdateTiming Before Physical Synthesis
-Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1434a3583
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 28ce25665
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2.5.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 5 LUTNM shape to break, 324 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 3, two critical 2, total 5, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 118 nets or LUTs. Breaked 5 LUTs, combined 113 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 311 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 105 nets or LUTs. Breaked 0 LUT, combined 105 existing LUTs and moved 0 existing LUT
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -677,7 +676,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -686,7 +685,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            5  |            113  |                   118  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |            105  |                   105  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -695,69 +694,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            5  |            113  |                   118  |           0  |           9  |  00:00:01  |
+|  Total                                            |            0  |            105  |                   105  |           0  |           9  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.5.2 Physical Synthesis In Placer | Checksum: 14efa5e22
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 14620fb1c
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 2.5 Global Place Phase2 | Checksum: 1c9a457b6
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 17742e691
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1c9a457b6
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 17742e691
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1edc41790
+Phase 3.1 Commit Multi Column Macros | Checksum: 1ede76814
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:23 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 17412a327
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: e349a657
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1a0eb9f66
+Phase 3.3 Area Swap Optimization | Checksum: 137518642
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 167ab25aa
+Phase 3.4 Pipeline Register Optimization | Checksum: 1a8d3e3fd
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: fd6b3d77
+Phase 3.5 Fast Optimization | Checksum: 102a0bc86
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:29 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 14dbcd7b1
+Phase 3.6 Small Shape Detail Placement | Checksum: 13f4b0882
 
-Time (s): cpu = 00:00:56 ; elapsed = 00:00:36 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 196aa909b
+Phase 3.7 Re-assign LUT pins | Checksum: 1900b6dbc
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:38 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:26 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1d2017fe0
+Phase 3.8 Pipeline Register Optimization | Checksum: 226e97551
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:38 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:26 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 176f74145
+Phase 3.9 Fast Optimization | Checksum: 186368b02
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:46 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 176f74145
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:28 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 186368b02
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:46 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:28 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -765,7 +764,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: eb000022
+Post Placement Optimization Initialization | Checksum: 1e6382b06
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -773,33 +772,33 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.421 | TNS=-1.405 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1572cfa0e
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.190 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 16d80601d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.250 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
-Ending Physical Synthesis Task | Checksum: 1a6af31aa
+Ending Physical Synthesis Task | Checksum: 214ddfd90
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.285 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: eb000022
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1e6382b06
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:00:50 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.139. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1962de66a
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.564. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 20f681249
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 1962de66a
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 20f681249
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1962de66a
+Phase 4.2 Post Placement Cleanup | Checksum: 20f681249
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
 
@@ -811,242 +810,118 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |___________|___________________|___________________|
 |      North|                1x1|                1x1|
 |___________|___________________|___________________|
-|      South|                1x1|                1x1|
+|      South|                1x1|                2x2|
 |___________|___________________|___________________|
 |       East|                1x1|                1x1|
 |___________|___________________|___________________|
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 1962de66a
+Phase 4.3.1 Print Estimated Congestion | Checksum: 20f681249
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: 1962de66a
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 20f681249
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 25813fc55
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2e3d65abd
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Ending Placer Task | Checksum: 1b3b76ed0
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Ending Placer Task | Checksum: 204b38b38
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:48 . Memory (MB): peak = 2073.590 ; gain = 0.000
-97 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2076.129 ; gain = 0.000
+97 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:02:21 ; elapsed = 00:01:56 . Memory (MB): peak = 2073.590 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:42 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
 Running report generation with 2 threads.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_placed.rpt -pb top_module_utilization_placed.pb
 INFO: [Vivado 12-24828] Executing command : report_io -file top_module_io_placed.rpt
-report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.218 . Memory (MB): peak = 2073.590 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.229 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file top_module_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2073.590 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2076.129 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2076.129 ; gain = 0.000
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote PlaceStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.838 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.976 . Memory (MB): peak = 2073.590 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module_placed.dcp' has been generated.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.717 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.879 . Memory (MB): peak = 2076.129 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module_placed.dcp' has been generated.
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2073.590 ; gain = 0.000
-INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 4.00s |  WALL: 2.58s
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2073.590 ; gain = 0.000
-
-Starting Physical Synthesis Task
-
-Phase 1 Physical Synthesis Initialization
-INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-0.125 |
-Phase 1 Physical Synthesis Initialization | Checksum: 150b0a2ec
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2073.590 ; gain = 0.000
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-0.125 |
-
-Phase 2 DSP Register Optimization
-INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
-INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: 150b0a2ec
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2073.590 ; gain = 0.000
-
-Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-0.125 |
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-710] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_reg. Critical path length was reduced through logic transformation on cell arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_i_1_comp.
-INFO: [Physopt 32-735] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_4_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.086 | TNS=-0.086 |
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
-INFO: [Physopt 32-735] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_11_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.080 | TNS=-0.080 |
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sel0[11].  Re-placed instance arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr[11]_i_1
-INFO: [Physopt 32-735] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sel0[11]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.065 | TNS=-0.065 |
-INFO: [Physopt 32-663] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sel0[25].  Re-placed instance arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr[25]_i_3
-INFO: [Physopt 32-735] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sel0[25]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.062 | TNS=-0.062 |
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_i_5_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_reg. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-81] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg_n_0_[3]. Replicated 1 times.
-INFO: [Physopt 32-735] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg_n_0_[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.050 | TNS=-0.050 |
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg_n_0_[3]_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_i_5_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_reg. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg_n_0_[3]_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.050 | TNS=-0.050 |
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 3 Critical Path Optimization | Checksum: 150b0a2ec
-
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2073.590 ; gain = 0.000
-
-Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.050 | TNS=-0.050 |
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_i_5_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_reg. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg_n_0_[3]_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_i_5_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_reg. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg_n_0_[3]_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.050 | TNS=-0.050 |
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Phase 4 Critical Path Optimization | Checksum: 150b0a2ec
-
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2073.590 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.050 | TNS=-0.050 |
-
-Summary of Physical Synthesis Optimizations
-============================================
-
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.075  |          0.075  |            1  |              0  |                     5  |           0  |           2  |  00:00:04  |
-|  Total          |          0.075  |          0.075  |            1  |              0  |                     5  |           0  |           3  |  00:00:04  |
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: 1c7846596
-
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2076.129 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.564 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
-184 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+108 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2076.129 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2076.129 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2076.129 ; gain = 0.000
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote PlaceStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.846 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2073.590 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2073.590 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module_physopt.dcp' has been generated.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.650 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2076.129 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.791 . Memory (MB): peak = 2076.129 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: 72a00b4d ConstDB: 0 ShapeSum: e318520e RouteDB: 15f972f0
-Post Restoration Checksum: NetGraph: ffc84722 | NumContArr: d10dfd83 | Constraints: c2a8fa9d | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 3562839df
+Checksum: PlaceDB: fd316cb1 ConstDB: 0 ShapeSum: f188ab97 RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: 98117117 | NumContArr: 20f5e6de | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 23e594d2f
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:48 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 3562839df
+Phase 2.1 Fix Topology Constraints | Checksum: 23e594d2f
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:48 . Memory (MB): peak = 2076.129 ; gain = 0.000
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 3562839df
+Phase 2.2 Pre Route Cleanup | Checksum: 23e594d2f
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 2073.590 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:48 . Memory (MB): peak = 2076.129 ; gain = 0.000
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 1f0b548be
+Phase 2.3 Update Timing | Checksum: 1c034e21b
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:56 . Memory (MB): peak = 2098.781 ; gain = 25.191
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.069 | TNS=-0.069 | WHS=-0.347 | THS=-132.254|
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:51 . Memory (MB): peak = 2088.344 ; gain = 12.215
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.532  | TNS=0.000  | WHS=-0.345 | THS=-148.306|
 
 
 Phase 2.4 Soft Constraint Pins - Fast Budgeting
-Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 25bb9c86d
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 22dd94111
 
-Time (s): cpu = 00:01:10 ; elapsed = 00:00:58 . Memory (MB): peak = 2123.414 ; gain = 49.824
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:52 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -1054,105 +929,91 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 5899
+  Number of Failed Nets               = 5616
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 5899
+  Number of Unrouted Nets             = 5616
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 2e6590987
+Phase 2 Router Initialization | Checksum: 1db7c5b52
 
-Time (s): cpu = 00:01:11 ; elapsed = 00:00:59 . Memory (MB): peak = 2123.414 ; gain = 49.824
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:53 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 3 Global Routing
-Phase 3 Global Routing | Checksum: 2e6590987
+Phase 3 Global Routing | Checksum: 1db7c5b52
 
-Time (s): cpu = 00:01:11 ; elapsed = 00:00:59 . Memory (MB): peak = 2123.414 ; gain = 49.824
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:53 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 4 Initial Routing
 
 Phase 4.1 Initial Net Routing Pass
-Phase 4.1 Initial Net Routing Pass | Checksum: 20259e963
+Phase 4.1 Initial Net Routing Pass | Checksum: 22d7cd55f
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:01:02 . Memory (MB): peak = 2123.414 ; gain = 49.824
-Phase 4 Initial Routing | Checksum: 20259e963
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:54 . Memory (MB): peak = 2112.926 ; gain = 36.797
+Phase 4 Initial Routing | Checksum: 22d7cd55f
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:01:02 . Memory (MB): peak = 2123.414 ; gain = 49.824
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:54 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 5 Rip-up And Reroute
 
 Phase 5.1 Global Iteration 0
- Number of Nodes with overlaps = 498
- Number of Nodes with overlaps = 97
- Number of Nodes with overlaps = 40
- Number of Nodes with overlaps = 18
- Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 405
+ Number of Nodes with overlaps = 72
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 13
  Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 4
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.420 | TNS=-0.473 | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.110  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Global Iteration 0 | Checksum: 2531171c8
+Phase 5.1 Global Iteration 0 | Checksum: 1bcfa1c95
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:01:10 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:59 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 5.2 Global Iteration 1
- Number of Nodes with overlaps = 56
- Number of Nodes with overlaps = 20
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 4
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.407 | TNS=-0.475 | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.110  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.2 Global Iteration 1 | Checksum: 211c83117
+Phase 5.2 Global Iteration 1 | Checksum: 315459e00
 
-Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2124.336 ; gain = 50.746
-Phase 5 Rip-up And Reroute | Checksum: 211c83117
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
+Phase 5 Rip-up And Reroute | Checksum: 315459e00
 
-Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 6 Delay and Skew Optimization
 
 Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 315459e00
 
-Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 25ad33298
-
-Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2124.336 ; gain = 50.746
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.292 | TNS=-0.292 | WHS=N/A    | THS=N/A    |
-
- Number of Nodes with overlaps = 0
-Phase 6.1 Delay CleanUp | Checksum: 1b811ad8a
-
-Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 6.2 Clock Skew Optimization
-Phase 6.2 Clock Skew Optimization | Checksum: 1b811ad8a
+Phase 6.2 Clock Skew Optimization | Checksum: 315459e00
 
-Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2124.336 ; gain = 50.746
-Phase 6 Delay and Skew Optimization | Checksum: 1b811ad8a
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
+Phase 6 Delay and Skew Optimization | Checksum: 315459e00
 
-Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 7 Post Hold Fix
 
 Phase 7.1 Hold Fix Iter
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.292 | TNS=-0.292 | WHS=0.044  | THS=0.000  |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.258  | TNS=0.000  | WHS=0.023  | THS=0.000  |
 
-Phase 7.1 Hold Fix Iter | Checksum: 237782e7b
+Phase 7.1 Hold Fix Iter | Checksum: 2e3065449
 
-Time (s): cpu = 00:01:31 ; elapsed = 00:01:13 . Memory (MB): peak = 2124.336 ; gain = 50.746
-Phase 7 Post Hold Fix | Checksum: 237782e7b
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
+Phase 7 Post Hold Fix | Checksum: 2e3065449
 
-Time (s): cpu = 00:01:31 ; elapsed = 00:01:13 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.904007 %
-  Global Horizontal Routing Utilization  = 1.10936 %
+  Global Vertical Routing Utilization    = 0.83411 %
+  Global Horizontal Routing Utilization  = 0.991886 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -1162,99 +1023,68 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
+Phase 8 Route finalize | Checksum: 2e3065449
 
---GLOBAL Congestion:
-Utilization threshold used for congestion level computation: 0.85
-Congestion Report
-North Dir 1x1 Area, Max Cong = 41.4414%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 36.036%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 57.3529%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 42.6471%, No Congested Regions.
-
-------------------------------
-Reporting congestion hotspots
-------------------------------
-Direction: North
-----------------
-Congested clusters found at Level 0
-Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
-Direction: South
-----------------
-Congested clusters found at Level 0
-Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
-Direction: East
-----------------
-Congested clusters found at Level 0
-Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
-Direction: West
-----------------
-Congested clusters found at Level 0
-Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
-
-Phase 8 Route finalize | Checksum: 237782e7b
-
-Time (s): cpu = 00:01:31 ; elapsed = 00:01:13 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 237782e7b
+Phase 9 Verifying routed nets | Checksum: 2e3065449
 
-Time (s): cpu = 00:01:31 ; elapsed = 00:01:13 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:00 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: 25536bf05
+Phase 10 Depositing Routes | Checksum: 2bd11f11c
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:01:14 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:01 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 11 Post Process Routing
-Phase 11 Post Process Routing | Checksum: 25536bf05
+Phase 11 Post Process Routing | Checksum: 2bd11f11c
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:01:14 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:01 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Phase 12 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.292 | TNS=-0.292 | WHS=0.044  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.258  | TNS=0.000  | WHS=0.023  | THS=0.000  |
 
-WARNING: [Route 35-328] Router estimated timing not met.
-Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 12 Post Router Timing | Checksum: 25536bf05
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 2bd11f11c
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:01:14 . Memory (MB): peak = 2124.336 ; gain = 50.746
-Total Elapsed time in route_design: 74.01 secs
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:01 . Memory (MB): peak = 2112.926 ; gain = 36.797
+Total Elapsed time in route_design: 61.307 secs
 
 Phase 13 Post-Route Event Processing
-Phase 13 Post-Route Event Processing | Checksum: 1c2888df9
+Phase 13 Post-Route Event Processing | Checksum: 20df17113
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:01:14 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:01 . Memory (MB): peak = 2112.926 ; gain = 36.797
 INFO: [Route 35-16] Router Completed Successfully
-Ending Routing Task | Checksum: 1c2888df9
+Ending Routing Task | Checksum: 20df17113
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:01:14 . Memory (MB): peak = 2124.336 ; gain = 50.746
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:01 . Memory (MB): peak = 2112.926 ; gain = 36.797
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-199 Infos, 102 Warnings, 100 Critical Warnings and 0 Errors encountered.
+120 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:15 . Memory (MB): peak = 2124.336 ; gain = 50.746
+route_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:02 . Memory (MB): peak = 2112.926 ; gain = 36.797
 INFO: [Vivado 12-24828] Executing command : report_drc -file top_module_drc_routed.rpt -pb top_module_drc_routed.pb -rpx top_module_drc_routed.rpx
 Command: report_drc -file top_module_drc_routed.rpt -pb top_module_drc_routed.pb -rpx top_module_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module_drc_routed.rpt.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module_drc_routed.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2124.336 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2112.926 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_methodology -file top_module_methodology_drc_routed.rpt -pb top_module_methodology_drc_routed.pb -rpx top_module_methodology_drc_routed.rpx
 Command: report_methodology -file top_module_methodology_drc_routed.rpt -pb top_module_methodology_drc_routed.pb -rpx top_module_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module_methodology_drc_routed.rpt.
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2124.336 ; gain = 0.000
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2112.926 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file top_module_timing_summary_routed.rpt -pb top_module_timing_summary_routed.pb -rpx top_module_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
 INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
 Running report generation with 2 threads.
 INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file top_module_incremental_reuse_routed.rpt
@@ -1267,26 +1097,26 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-216 Infos, 103 Warnings, 101 Critical Warnings and 0 Errors encountered.
+137 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file top_module_clock_utilization_routed.rpt
 INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file top_module_bus_skew_routed.rpt -pb top_module_bus_skew_routed.pb -rpx top_module_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-generate_parallel_reports: Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2124.336 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 2112.926 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2124.336 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2124.336 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2112.926 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2112.926 ; gain = 0.000
 Writing XDEF routing.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 2124.336 ; gain = 0.000
 Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.068 . Memory (MB): peak = 2112.926 ; gain = 0.000
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.264 . Memory (MB): peak = 2124.336 ; gain = 0.000
-Wrote PlaceStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.799 . Memory (MB): peak = 2124.336 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2124.336 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2124.336 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2124.336 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/impl_1/top_module_routed.dcp' has been generated.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.166 . Memory (MB): peak = 2112.926 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.709 . Memory (MB): peak = 2112.926 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2112.926 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2112.926 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.957 . Memory (MB): peak = 2112.926 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/impl_1/top_module_routed.dcp' has been generated.
 INFO: [Memdata 28-167] Found XPM memory block arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
 INFO: [Memdata 28-208] The XPM instance: <arm_design_i/arm_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <arm_design_i/arm_design_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
 Command: write_bitstream -force top_module.bit
@@ -1308,7 +1138,7 @@ Creating bitstream...
 Writing bitstream ./top_module.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Common 17-83] Releasing license: Implementation
-232 Infos, 103 Warnings, 101 Critical Warnings and 0 Errors encountered.
+153 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 2437.746 ; gain = 313.410
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 26 14:29:54 2025...
+write_bitstream: Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 2435.480 ; gain = 322.555
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 15:28:28 2025...

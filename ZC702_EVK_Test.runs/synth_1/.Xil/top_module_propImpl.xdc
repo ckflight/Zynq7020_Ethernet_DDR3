@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc rfile:../../../ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc rfile:../../../ZC702_EVK_Test.srcs/constrs_1/new/pinout.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R7 [get_ports PL_PJTAG_TDO_R]
 set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]

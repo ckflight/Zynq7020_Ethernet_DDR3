@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/synth_1'
+HD_PWD='C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

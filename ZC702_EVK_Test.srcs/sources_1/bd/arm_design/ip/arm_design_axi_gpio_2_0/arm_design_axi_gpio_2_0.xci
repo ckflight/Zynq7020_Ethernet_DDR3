@@ -12,7 +12,7 @@
         "C_GPIO_WIDTH": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_GPIO2_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_IS_DUAL": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "C_ALL_INPUTS": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "C_ALL_INPUTS": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_TRI_DEFAULT_2": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_DOUT_DEFAULT_2": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_DOUT_DEFAULT": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
@@ -43,17 +43,17 @@
         "C_TRI_DEFAULT_2": [ { "value": "0xFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ]
       },
       "project_parameters": {
-        "ARCHITECTURE": [ { "value": "zynq", "usage": "all" } ],
-        "BASE_BOARD_PART": [ { "value": "xilinx.com:zc702:part0:1.4", "usage": "all" } ],
-        "BOARD_CONNECTIONS": [ { "value": "", "usage": "all" } ],
-        "DEVICE": [ { "value": "xc7z020", "usage": "all" } ],
-        "PACKAGE": [ { "value": "clg484", "usage": "all" } ],
-        "PREFHDL": [ { "value": "VHDL", "usage": "all" } ],
-        "SILICON_REVISION": [ { "value": "", "usage": "all" } ],
-        "SIMULATOR_LANGUAGE": [ { "value": "MIXED", "usage": "all" } ],
-        "SPEEDGRADE": [ { "value": "-1", "usage": "all" } ],
-        "STATIC_POWER": [ { "value": "", "usage": "all" } ],
-        "TEMPERATURE_GRADE": [ { "value": "", "usage": "all" } ]
+        "ARCHITECTURE": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
+        "BASE_BOARD_PART": [ { "value": "xilinx.com:zc702:part0:1.4", "resolve_type": "generated", "usage": "all" } ],
+        "BOARD_CONNECTIONS": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "DEVICE": [ { "value": "xc7z020", "resolve_type": "generated", "usage": "all" } ],
+        "PACKAGE": [ { "value": "clg484", "resolve_type": "generated", "usage": "all" } ],
+        "PREFHDL": [ { "value": "VHDL", "resolve_type": "generated", "usage": "all" } ],
+        "SILICON_REVISION": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED", "resolve_type": "generated", "usage": "all" } ],
+        "SPEEDGRADE": [ { "value": "-1", "resolve_type": "generated", "usage": "all" } ],
+        "STATIC_POWER": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "TEMPERATURE_GRADE": [ { "value": "", "resolve_type": "generated", "usage": "all" } ]
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
@@ -359,5 +359,5 @@
       }
     }
   },
-  "checksum": "b6c9b974"
+  "checksum": "29587fec"
 }

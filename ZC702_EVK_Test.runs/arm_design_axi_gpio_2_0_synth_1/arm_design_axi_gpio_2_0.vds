@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Nov 25 14:26:40 2025
-# Process ID         : 7208
-# Current directory  : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_2_0_synth_1
+# Start of session at: Fri Dec  5 15:19:53 2025
+# Process ID         : 11828
+# Current directory  : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_2_0_synth_1
 # Command line       : vivado.exe -log arm_design_axi_gpio_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arm_design_axi_gpio_2_0.tcl
-# Log file           : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_2_0_synth_1/arm_design_axi_gpio_2_0.vds
-# Journal file       : C:/Users/CK/Desktop/FPGA_Workspace/VIVADO_PROJECTS/ZC702_EVK_Test/ZC702_EVK_Test.runs/arm_design_axi_gpio_2_0_synth_1\vivado.jou
+# Log file           : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_2_0_synth_1/arm_design_axi_gpio_2_0.vds
+# Journal file       : C:/Users/CK/Desktop/Vivado/ZC702_EVK/ZC702_EVK_Test.runs/arm_design_axi_gpio_2_0_synth_1\vivado.jou
 # Running On         : DESKTOP-BEUFM6D
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 19045
@@ -17,11 +17,11 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 17083 MB
-# Swap memory        : 5861 MB
-# Total Virtual      : 22945 MB
-# Available Virtual  : 4707 MB
+# Swap memory        : 11045 MB
+# Total Virtual      : 28129 MB
+# Available Virtual  : 5786 MB
 #-----------------------------------------------------------
 source arm_design_axi_gpio_2_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 576.453 ; gain = 221.109
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP arm_design_axi_gpio_2_0, cache-ID = 58b33eb1bc9edff3.
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 14:27:13 2025...
+create_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 576.059 ; gain = 218.785
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP arm_design_axi_gpio_2_0, cache-ID = 01d8daef6644683c.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 15:20:29 2025...

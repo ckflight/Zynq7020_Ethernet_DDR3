@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1764156034" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_module.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1764937350" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_module.dcp">
   <File Type="PA-TCL" Name="top_module.tcl"/>
   <File Type="REPORTS-TCL" Name="top_module_reports.tcl"/>
   <File Type="RDS-RDS" Name="top_module.vds"/>
@@ -66,9 +66,12 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="arm_design_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_gpio_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_gpio_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_gpio_1_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="arm_design_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_dma_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="arm_design_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_smc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_gpio_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_mem_intercon_imp_s00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arm_design_axi_mem_intercon_imp_auto_pc_0"/>
 </GenRun>
