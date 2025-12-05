@@ -204,7 +204,7 @@
                         interrupt-parent = <&intc>;
                         tx-fifo-depth = <0x40>;
                         rx-fifo-depth = <0x40>;
-                        xlnx,can-clk-freq-hz = <0x16b4df5>;
+                        xlnx,can-clk-freq-hz = <0x16b4df3>;
                         xlnx,ip-name = "ps7_can";
                         xlnx,name = "ps7_can_0";
                 };
@@ -333,13 +333,13 @@
                         #size-cells = <0x0>;
                         xlnx,qspi-fbclk = <0x0>;
                         num-cs = <0x1>;
-                        xlnx,qspi-clk-freq-hz = <0xb2d05e0>;
+                        xlnx,qspi-clk-freq-hz = <0xbebc200>;
                         xlnx,bus-width = <0x2>;
                         xlnx,ip-name = "ps7_qspi";
                         spi-rx-bus-width = <0x4>;
                         xlnx,connection-mode = <0x0>;
                         spi-tx-bus-width = <0x4>;
-                        xlnx,clock-freq = <0xb2d05e0>;
+                        xlnx,clock-freq = <0xbebc200>;
                         xlnx,fb-clk = <0x1>;
                         xlnx,qspi-mode = <0x0>;
                         xlnx,name = "ps7_qspi_0";
@@ -362,8 +362,8 @@
                         #size-cells = <0x0>;
                         xlnx,has-mdio = <0x1>;
                         phy-mode = "rgmii-id";
-                        xlnx,enet-slcr-1000mbps-div0 = <0xc>;
-                        xlnx,enet-slcr-10mbps-div0 = <0xc>;
+                        xlnx,enet-slcr-1000mbps-div0 = <0x8>;
+                        xlnx,enet-slcr-10mbps-div0 = <0x8>;
                         enet-reset = <0x15 0xb 0x0>;
                         xlnx,enet-slcr-1000mbps-div1 = <0x1>;
                         xlnx,enet-slcr-10mbps-div1 = <0x32>;
@@ -371,7 +371,7 @@
                         xlnx,eth-mode = <0x1>;
                         xlnx,enet-reset = "MIO , 11";
                         xlnx,enet-clk-freq-hz = <0x7735940>;
-                        xlnx,enet-slcr-100mbps-div0 = <0xc>;
+                        xlnx,enet-slcr-100mbps-div0 = <0x8>;
                         xlnx,ptp-enet-clock = <0x69f6bcb>;
                         xlnx,enet-slcr-100mbps-div1 = <0x5>;
                         xlnx,name = "ps7_ethernet_0";
@@ -870,7 +870,7 @@
                         phandle = <0x50>;
                         compatible = "xlnx,fclk";
                         assigned-clocks = <&clkc 0xf>;
-                        assigned-clock-rates = <0x93d1cc0>;
+                        assigned-clock-rates = <0x7735940>;
                         #clock-cells = <0x0>;
                         clock-output-names = "fabric_clk";
                         clocks = <&clkc 0xf>;

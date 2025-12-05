@@ -115,14 +115,14 @@
 			xlnx,pcw-p2f-i2c0-intr = <0>;
 			xlnx,pcw-uiparam-ddr-clock-2-package-length = <0x3a42ac4>;
 			status = "okay";
-			xlnx,pcw-act-can-peripheral-freqmhz = <0x16b4df5>;
+			xlnx,pcw-act-can-peripheral-freqmhz = <0x16b4df3>;
 			xlnx,pcw-ttc1-clk2-peripheral-divisor0 = <1>;
 			xlnx,pcw-mio-32-iotype = "LVCMOS , 1.8V";
 			xlnx,pcw-p2f-gpio-intr = <0>;
 			xlnx,pcw-ttc0-clk1-peripheral-freqmhz = <0x7f28155>;
 			xlnx,pcw-value-silversion = <3>;
 			xlnx,pcw-nor-cs1-t-wp = <1>;
-			xlnx,pcw-pcap-peripheral-divisor0 = <8>;
+			xlnx,pcw-pcap-peripheral-divisor0 = <5>;
 			xlnx,pcw-spi1-spi1-io = "<Select>";
 			xlnx,pcw-wdt-peripheral-freqmhz = <0x7f28155>;
 			xlnx,pcw-mio-18-pullup = "disabled";
@@ -151,7 +151,7 @@
 			xlnx,pcw-nor-grp-sram-cs0-enable = <0>;
 			xlnx,pcw-clk1-freq = <10000000>;
 			xlnx,pcw-mio-48-slew = "slow";
-			xlnx,pcw-m-axi-gp0-freqmhz = <150>;
+			xlnx,pcw-m-axi-gp0-freqmhz = <125>;
 			xlnx,pcw-ttc0-clk2-peripheral-divisor0 = <1>;
 			xlnx,pcw-mio-45-slew = "slow";
 			xlnx,pcw-mio-23-iotype = "HSTL , 1.8V";
@@ -261,7 +261,7 @@
 			xlnx,m-axi-gp1-thread-id-width = <12>;
 			xlnx,pcw-nor-sram-cs0-t-wp = <1>;
 			xlnx,pcw-mio-34-pullup = "disabled";
-			xlnx,pcw-act-qspi-peripheral-freqmhz = <0xb2d05e0>;
+			xlnx,pcw-act-qspi-peripheral-freqmhz = <200>;
 			xlnx,pcw-sdio-peripheral-valid = <1>;
 			xlnx,pcw-en-emio-trace = <0>;
 			xlnx,pcw-uart0-grp-full-enable = <0>;
@@ -274,7 +274,7 @@
 			xlnx,pcw-nand-cycles-t-clr = <1>;
 			xlnx,pcw-pll-bypassmode-enable = <0>;
 			xlnx,s-axi-acp-aruser-val = <31>;
-			xlnx,pcw-io-io-pll-freqmhz = <1500>;
+			xlnx,pcw-io-io-pll-freqmhz = <1000>;
 			xlnx,pcw-mio-22-iotype = "HSTL , 1.8V";
 			xlnx,pcw-mio-51-pullup = "enabled";
 			xlnx,pcw-p2f-sdio1-intr = <0>;
@@ -384,7 +384,7 @@
 			xlnx,pcw-ftm-cti-in3 = "DISABLED";
 			xlnx,pcw-uiparam-ddr-dq-1-length-mm = <0>;
 			xlnx,pcw-mio-45-direction = "inout";
-			xlnx,pcw-uart-peripheral-divisor0 = <30>;
+			xlnx,pcw-uart-peripheral-divisor0 = <20>;
 			xlnx,use-m-axi-gp0 = <1>;
 			xlnx,pcw-mio-primitive = <54>;
 			xlnx,pcw-ddr-priority-readport-0 = "Low";
@@ -392,10 +392,10 @@
 			xlnx,pcw-ddr-priority-readport-1 = "Low";
 			xlnx,pcw-ddr-priority-readport-2 = "Low";
 			xlnx,pcw-en-pjtag = <0>;
-			xlnx,pcw-fclk0-peripheral-divisor0 = <10>;
+			xlnx,pcw-fclk0-peripheral-divisor0 = <4>;
 			xlnx,pcw-nor-cs0-t-tr = <1>;
 			xlnx,pcw-ddr-priority-readport-3 = "Low";
-			xlnx,pcw-fclk0-peripheral-divisor1 = <1>;
+			xlnx,pcw-fclk0-peripheral-divisor1 = <2>;
 			xlnx,pcw-gpio-emio-gpio-io = "<Select>";
 			xlnx,pcw-smc-peripheral-valid = <0>;
 			xlnx,pcw-uart1-peripheral-enable = <1>;
@@ -455,12 +455,12 @@
 			xlnx,pcw-mio-51-slew = "slow";
 			xlnx,pcw-fclk2-peripheral-divisor1 = <1>;
 			xlnx,pcw-fpga-fclk2-enable = <0>;
-			xlnx,pcw-clk0-freq = <150000000>;
+			xlnx,pcw-clk0-freq = <125000000>;
 			xlnx,pcw-mio-47-slew = "slow";
-			xlnx,pcw-sdio-peripheral-divisor0 = <30>;
+			xlnx,pcw-sdio-peripheral-divisor0 = <20>;
 			xlnx,pcw-use-expanded-iop = <0>;
 			xlnx,pcw-mio-44-slew = "slow";
-			xlnx,pcw-qspi-peripheral-divisor0 = <8>;
+			xlnx,pcw-qspi-peripheral-divisor0 = <5>;
 			xlnx,pcw-gp0-num-read-threads = <4>;
 			xlnx,pcw-en-rst3-port = <0>;
 			xlnx,pcw-mio-34-direction = "inout";
@@ -489,9 +489,9 @@
 			xlnx,pcw-uiparam-ddr-dq-0-propogation-delay = <160>;
 			xlnx,pcw-mio-24-slew = "slow";
 			xlnx,pcw-mio-44-direction = "inout";
-			xlnx,pcw-fpga0-peripheral-freqmhz = <155>;
+			xlnx,pcw-fpga0-peripheral-freqmhz = <125>;
 			xlnx,pcw-mio-8-iotype = "LVCMOS , 1.8V";
-			xlnx,pcw-iopll-ctrl-fbdiv = <45>;
+			xlnx,pcw-iopll-ctrl-fbdiv = <30>;
 			xlnx,pcw-mio-45-iotype = "LVCMOS , 1.8V";
 			xlnx,pcw-p2f-can1-intr = <0>;
 			xlnx,pcw-ddr-priority-writeport-0 = "Low";
@@ -638,7 +638,7 @@
 			xlnx,pcw-mio-22-direction = "in";
 			xlnx,pcw-mio-47-pullup = "enabled";
 			xlnx,pcw-apu-clk-ratio-enable = "6:2:1";
-			xlnx,pcw-act-fpga0-peripheral-freqmhz = <150>;
+			xlnx,pcw-act-fpga0-peripheral-freqmhz = <125>;
 			xlnx,pcw-p2f-dmac2-intr = <0>;
 			xlnx,pcw-fclk2-peripheral-clksrc = "IO , PLL";
 			xlnx,pcw-usb1-usb1-io = "<Select>";
@@ -674,7 +674,7 @@
 			xlnx,pcw-mio-42-direction = "inout";
 			xlnx,pcw-use-s-axi-hp0 = <1>;
 			xlnx,pcw-use-s-axi-hp1 = <0>;
-			xlnx,pcw-enet0-peripheral-divisor0 = <12>;
+			xlnx,pcw-enet0-peripheral-divisor0 = <8>;
 			xlnx,pcw-mio-10-iotype = "LVCMOS , 1.8V";
 			xlnx,pcw-use-s-axi-hp2 = <0>;
 			xlnx,pcw-enet0-peripheral-divisor1 = <1>;
@@ -730,7 +730,7 @@
 			xlnx,pcw-mio-29-pullup = "disabled";
 			xlnx,pcw-mio-30-pullup = "disabled";
 			xlnx,trace-internal-width = <2>;
-			xlnx,pcw-s-axi-hp0-freqmhz = <150>;
+			xlnx,pcw-s-axi-hp0-freqmhz = <125>;
 			xlnx,pcw-mio-7-direction = "out";
 			xlnx,pcw-i2c0-reset-enable = <1>;
 			xlnx,pcw-mio-53-slew = "slow";
@@ -819,7 +819,7 @@
 			xlnx,pcw-act-ttc0-clk2-peripheral-freqmhz = <0x69f6bcb>;
 			xlnx,pcw-uiparam-ddr-ecc = "Disabled";
 			xlnx,pcw-mio-25-iotype = "HSTL , 1.8V";
-			xlnx,pcw-act-pcap-peripheral-freqmhz = <0xb2d05e0>;
+			xlnx,pcw-act-pcap-peripheral-freqmhz = <200>;
 			xlnx,pcw-uart1-grp-full-enable = <0>;
 			xlnx,pcw-ddr-peripheral-clksrc = "DDR , PLL";
 			xlnx,pcw-mio-19-direction = "out";
@@ -863,8 +863,8 @@
 			xlnx,pcw-mio-40-direction = "inout";
 			xlnx,pcw-uiparam-ddr-device-capacity = "2048 , MBits";
 			xlnx,pcw-uiparam-ddr-al = <0>;
-			xlnx,pcw-can-peripheral-divisor0 = <9>;
-			xlnx,pcw-can-peripheral-divisor1 = <7>;
+			xlnx,pcw-can-peripheral-divisor0 = <7>;
+			xlnx,pcw-can-peripheral-divisor1 = <6>;
 			xlnx,use-trace-data-edge-detector = <0>;
 			xlnx,pcw-ttc0-clk2-peripheral-clksrc = "CPU_1X";
 			xlnx,pcw-nor-cs1-t-ceoe = <1>;
@@ -1032,14 +1032,14 @@
 	&qspi {
 		xlnx,qspi-fbclk = <0>;
 		num-cs = <1>;
-		xlnx,qspi-clk-freq-hz = <187500000>;
+		xlnx,qspi-clk-freq-hz = <200000000>;
 		xlnx,bus-width = <2>;
 		xlnx,ip-name = "ps7_qspi";
 		spi-rx-bus-width = <4>;
 		xlnx,connection-mode = <0>;
 		spi-tx-bus-width = <4>;
 		status = "okay";
-		xlnx,clock-freq = <187500000>;
+		xlnx,clock-freq = <200000000>;
 		xlnx,fb-clk = <1>;
 		xlnx,qspi-mode = <0>;
 		xlnx,name = "ps7_qspi_0";
@@ -1049,8 +1049,8 @@
 	&gem0 {
 		xlnx,has-mdio = <1>;
 		phy-mode = "rgmii-id";
-		xlnx,enet-slcr-1000mbps-div0 = <12>;
-		xlnx,enet-slcr-10mbps-div0 = <12>;
+		xlnx,enet-slcr-1000mbps-div0 = <8>;
+		xlnx,enet-slcr-10mbps-div0 = <8>;
 		enet-reset = <&gpio0 11 0>;
 		xlnx,enet-slcr-1000mbps-div1 = <1>;
 		xlnx,enet-slcr-10mbps-div1 = <50>;
@@ -1058,7 +1058,7 @@
 		xlnx,eth-mode = <1>;
 		xlnx,enet-reset = "MIO , 11";
 		xlnx,enet-clk-freq-hz = <125000000>;
-		xlnx,enet-slcr-100mbps-div0 = <12>;
+		xlnx,enet-slcr-100mbps-div0 = <8>;
 		xlnx,ptp-enet-clock = <0x69f6bcb>;
 		status = "okay";
 		xlnx,enet-slcr-100mbps-div1 = <5>;
@@ -1094,7 +1094,7 @@
 	};
 	&can0 {
 		status = "okay";
-		xlnx,can-clk-freq-hz = <23809525>;
+		xlnx,can-clk-freq-hz = <23809523>;
 		xlnx,ip-name = "ps7_can";
 		xlnx,name = "ps7_can_0";
 	};

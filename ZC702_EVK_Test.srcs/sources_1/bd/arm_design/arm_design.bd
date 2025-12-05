@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x13499D2683CF94A4",
+      "boundary_crc": "0x13499D26DA80B60E",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../ZC702_EVK_Test.gen/sources_1/bd/arm_design",
       "name": "arm_design",
@@ -243,7 +243,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "150000000",
+            "value": "125000000",
             "value_src": "user_prop"
           },
           "HAS_TKEEP": {
@@ -345,7 +345,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "150000000",
+            "value": "125000000",
             "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {
@@ -376,7 +376,7 @@
             "value": "666.666687"
           },
           "PCW_ACT_CAN_PERIPHERAL_FREQMHZ": {
-            "value": "23.809525"
+            "value": "23.809523"
           },
           "PCW_ACT_DCI_PERIPHERAL_FREQMHZ": {
             "value": "10.158730"
@@ -388,7 +388,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "150.000000"
+            "value": "125.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -400,10 +400,10 @@
             "value": "10.000000"
           },
           "PCW_ACT_PCAP_PERIPHERAL_FREQMHZ": {
-            "value": "187.500000"
+            "value": "200.000000"
           },
           "PCW_ACT_QSPI_PERIPHERAL_FREQMHZ": {
-            "value": "187.500000"
+            "value": "200.000000"
           },
           "PCW_ACT_SDIO_PERIPHERAL_FREQMHZ": {
             "value": "50.000000"
@@ -460,7 +460,7 @@
             "value": "1"
           },
           "PCW_CLK0_FREQ": {
-            "value": "150000000"
+            "value": "125000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -583,7 +583,7 @@
             "value": "0"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "155"
+            "value": "125"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -1448,6 +1448,9 @@
           "c_s2mm_burst_size": {
             "value": "256"
           },
+          "c_s_axis_s2mm_tdata_width": {
+            "value": "64"
+          },
           "c_sg_length_width": {
             "value": "26"
           }
@@ -1668,7 +1671,7 @@
             "value": "1"
           },
           "S00_HAS_DATA_FIFO": {
-            "value": "2"
+            "value": "1"
           },
           "S00_HAS_REGSLICE": {
             "value": "3"

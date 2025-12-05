@@ -162,7 +162,7 @@
         "S13_HAS_REGSLICE": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "S14_HAS_REGSLICE": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "S15_HAS_REGSLICE": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "S00_HAS_DATA_FIFO": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "S00_HAS_DATA_FIFO": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "S01_HAS_DATA_FIFO": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "S02_HAS_DATA_FIFO": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "S03_HAS_DATA_FIFO": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -349,5 +349,5 @@
       }
     }
   },
-  "checksum": "6d1556ec"
+  "checksum": "5a35b962"
 }

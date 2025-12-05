@@ -12,6 +12,8 @@
 
 #include "xttcps.h"
 
+
+
 /*
 These settings affect ethernet speed!!!
 ===========================================================
@@ -41,30 +43,24 @@ lwip220_n_rx_descriptors = 512
 lwip220_n_tx_descriptors = 512
 */
 
-/* ===================== SYSTEM CONSTANTS ===================== */
-
-#undef  DMA_S2MM_INTR_ID
-#define DMA_S2MM_INTR_ID            61   // IRQ_F2P[0] → GIC ID 61 on Zynq
+#define DMA_S2MM_INTR_ID            (32 + XPAR_FABRIC_XAXIDMA_0_INTR)// IRQ_F2P[0] → GIC ID 61 on Zynq
 #define XPAR_XAXIDMA_0_DEVICE_ID    0
-//#define DMA_S2MM_INTR_ID XPAR_FABRIC_XAXIDMA_0_INTR
 
-#define DDR_BASE_ADDR      0x01000000
-//#define FCLK0_FREQ_HZ      142857132.0
-#define FCLK0_FREQ_HZ      150000000.0
+#define DDR_BASE_ADDR               0x01000000
+#define FCLK0_FREQ_HZ               125000000.0
 
-#define TTC_CLK_HZ      XPAR_XTTCPS_0_CLOCK_FREQ        // from xparameters.h
-#define TTC_PRESCALER   6                             // divide by 2^6 = 64
+#define TTC_CLK_HZ                  XPAR_XTTCPS_0_CLOCK_FREQ        // from xparameters.h   
+#define TTC_PRESCALER               6                               // divide by 2^6+1 = 128 (i have checked with usleep)
+#define TTC_CLK_PRESCALED           ((float)XPAR_XTTCPS_0_CLOCK_FREQ / (float)(1U << (TTC_PRESCALER+1)))
 
+#define PRINT_DDR_CONTENT           0
 
-#define PRINT_DDR_CONTENT   0
-
-const int burst_words       = 1048576; //= 1048576 ; 
+const int burst_words       = 131072;//262144;//1048576; 
 const int bytes_per_word    = 8;         // 64-bit
 const int data_size         = burst_words * bytes_per_word;
 const int data_address_size = burst_words;
 int dma_print_increment     = 1;
 
-/* ===================== GLOBAL OBJECTS ===================== */
 
 XTtcPs Ttc;
 
@@ -78,7 +74,19 @@ XGpio GpioEnd;
 volatile int S2MM_Done = 0;
 volatile int DMA_Error = 0;
 
-/* ===================== DMA ISR (XILINX STYLE) ===================== */
+uint16_t ttc_counter_start = 0;
+uint16_t ttc_counter_end = 0;
+
+#define USE_TEST_TTC        1
+uint16_t ttc_test_counter1 = 0;
+uint16_t ttc_test_counter2 = 0;
+
+uint32_t gpio_counter_start = 0;
+uint32_t gpio_counter_end = 0;
+
+#define TOTAL_BURST     20
+uint32_t burst_counter = 0;
+
 
 void S2mmIsr(void *CallbackRef)
 {
@@ -109,6 +117,7 @@ void S2mmIsr(void *CallbackRef)
 
     if (IrqStatus & XAXIDMA_IRQ_IOC_MASK) {
         S2MM_Done = 1;
+        ttc_counter_end = XTtcPs_GetCounterValue(&Ttc);
     }
 
     XAxiDma_IntrEnable(AxiDmaInst,
@@ -262,12 +271,44 @@ int main(void)
 
     if (InitTtc() != XST_SUCCESS) {
         xil_printf("TTC init failed!\r\n");
-        return -1;
+        while(1);
     }
 
     InitGpio();
     InitAxiDma();
     InitInterruptSystem();
+
+    #if USE_TEST_TTC
+    ttc_test_counter1 = XTtcPs_GetCounterValue(&Ttc);
+    usleep(100);
+    ttc_test_counter2 = XTtcPs_GetCounterValue(&Ttc);
+    uint16_t delta_test_time = ttc_test_counter2 - ttc_test_counter1;
+
+    float delta_test_sec = (float)delta_test_time / TTC_CLK_PRESCALED;
+    xil_printf("Test Time 100 microsec \r\n");
+    xil_printf("Test Time: %u \r\n", delta_test_time);
+    xil_printf("Test Time sec: %u \r\n", (int)(delta_test_sec * 1000000.0));
+
+    ttc_test_counter1 = XTtcPs_GetCounterValue(&Ttc);
+    usleep(10000);
+    ttc_test_counter2 = XTtcPs_GetCounterValue(&Ttc);
+    delta_test_time = ttc_test_counter2 - ttc_test_counter1;
+
+    delta_test_sec = (float)delta_test_time / TTC_CLK_PRESCALED;
+    xil_printf("Test Time 10000 microsec \r\n");
+    xil_printf("Test Time: %u \r\n", delta_test_time);
+    xil_printf("Test Time sec: %u \r\n", (int)(delta_test_sec * 1000000.0));
+
+    ttc_test_counter1 = XTtcPs_GetCounterValue(&Ttc);
+    usleep(70000); // 128 divider max 75 ms
+    ttc_test_counter2 = XTtcPs_GetCounterValue(&Ttc);
+    delta_test_time = ttc_test_counter2 - ttc_test_counter1;
+
+    delta_test_sec = (float)delta_test_time / TTC_CLK_PRESCALED;
+    xil_printf("Test Time 70000 microsec \r\n");
+    xil_printf("Test Time: %u \r\n", delta_test_time);
+    xil_printf("Test Time sec: %u \r\n", (int)(delta_test_sec * 1000000.0));
+    #endif
 
     while (1){
 
@@ -279,74 +320,61 @@ int main(void)
 
         S2MM_Done = 0;
         DMA_Error = 0;
-
-        xil_printf("Starting DMA...\r\n");
-
-        /* --- TTC start value (16-bit counter) --- */
-        u16 ttc_start = XTtcPs_GetCounterValue(&Ttc);
+        
+        ttc_counter_start = XTtcPs_GetCounterValue(&Ttc);
 
         XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)RxBuffer, data_size, XAXIDMA_DEVICE_TO_DMA);
         
-        XGpio_DiscreteWrite(&GpioTrigger, 1, 1);
-        usleep(10);
-        XGpio_DiscreteWrite(&GpioTrigger, 1, 0x00);
+        if(burst_counter <= TOTAL_BURST){
+            xil_printf("Burst Counter: %u\r\n", burst_counter);
+            XGpio_DiscreteWrite(&GpioTrigger, 1, 1);
+            usleep(5);
+            XGpio_DiscreteWrite(&GpioTrigger, 1, 0x00);    
+        }
+        else{
+            // do not trigger new transfer
+            XGpio_DiscreteWrite(&GpioTrigger, 1, 0x00);
+        }
+                
+        while(!S2MM_Done && !DMA_Error);
         
-        xil_printf("GPIO start signal sent\r\n");        
-        
-        while(!S2MM_Done && !DMA_Error);    
-        
-        /* --- TTC end value --- */
-        u16 ttc_end = XTtcPs_GetCounterValue(&Ttc);
-        
-        if (DMA_Error) {
+        if(S2MM_Done){
+            burst_counter++;
+            xil_printf("DMA S2MM DONE\r\n");
+        }
+        else if(DMA_Error) {
             xil_printf("DMA FAILED\r\n");
-            return -1;
         }
 
-        xil_printf("DMA S2MM DONE\r\n");
-
         Xil_DCacheInvalidateRange((UINTPTR)RxBuffer, data_size);
-
         VerifyDdrContent((u64 *)DDR_BASE_ADDR, burst_words);
 
         // Read pl counters to calculate write speed
-        u32 start = XGpio_DiscreteRead(&GpioStart, 1);
-        u32 end   = XGpio_DiscreteRead(&GpioEnd,   1);
-        int delta = end - start;
+        gpio_counter_start  = XGpio_DiscreteRead(&GpioStart, 1);
+        gpio_counter_end    = XGpio_DiscreteRead(&GpioEnd,   1);
+        int delta           = gpio_counter_end - gpio_counter_start;
 
         float delta_sec = delta / FCLK0_FREQ_HZ;
         int speed = (float)data_size / delta_sec;
 
-
-        xil_printf("start = %u\r\n", start);
-        xil_printf("end   = %u\r\n", end);
-        xil_printf("delta = %u cycles\r\n", delta);
+        xil_printf("GPIO start = %u, end = %u, delta = %u\r\n", gpio_counter_start, gpio_counter_end, delta);
         xil_printf("delta_ms = %u,%u ms\r\n", (int)(delta_sec*1000.0), (((int)(delta_sec*1000000.0))%1000));
         xil_printf("speed = %ubps\r\n", speed);
         xil_printf("speed = %uMbps\r\n", speed/1000000);
-                
+        xil_printf("\r\n");
 
-        u16 ttc_delta;
-        if (ttc_end >= ttc_start)
-            ttc_delta = ttc_end - ttc_start;
-        else
-            ttc_delta = (u16)(0x10000 - ttc_start + ttc_end);   // handle wrap
-
-        /* Tick period: (2^prescaler) / TTC_CLK_HZ seconds */
-        float tick_period = ((double)(1U << (TTC_PRESCALER + 1))) / (double)TTC_CLK_HZ;
-        float ttc_delta_sec = (double)ttc_delta * tick_period;
+        uint16_t ttc_delta = ttc_counter_end - ttc_counter_start;
+        float ttc_delta_sec = (float)ttc_delta / TTC_CLK_PRESCALED;
 
         int ttc_speed   = (float)data_size / ttc_delta_sec;
 
-        xil_printf("TTC start = %u\r\n", ttc_start);
-        xil_printf("TTC end   = %u\r\n", ttc_end);
-        xil_printf("TTC delta = %u ticks\r\n", ttc_delta);  
+        xil_printf("TTC start = %u, end = %u, delta = %u\r\n", ttc_counter_start, ttc_counter_end, ttc_delta);
         xil_printf("TTC delta_ms = %u,%u ms\r\n", (int)(ttc_delta_sec*1000.0), (((int)(ttc_delta_sec*1000000.0))%1000));
         xil_printf("speed = %ubps\r\n", ttc_speed);
         xil_printf("speed = %uMbps\r\n", ttc_speed/1000000);
-                
+        xil_printf("\r\n");
+        
         print_ddr_content((u32*)DDR_BASE_ADDR);
-
-        usleep(10000);
+        
     }
 }

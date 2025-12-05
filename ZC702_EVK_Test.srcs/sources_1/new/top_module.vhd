@@ -124,7 +124,7 @@ architecture rtl of top_module is
     
     -- 100 mhz clock 234MB/sec speed
     -- 150 mhz clock 390MB/sec speed
-    constant TOTAL_BEATS : integer := 1048576;--33554432; --1048576; -- 1048576 * 8 = 8Mbyte write gives 420 Mbtes/sec speed
+    constant TOTAL_BEATS : integer := 131072;--1048576;-- 1048576 * 8 = 8Mbyte write gives 420 Mbtes/sec speed
     
 begin
     
@@ -273,6 +273,13 @@ begin
                             -- Start automatically (can replace with condition later)
                             s2mm_state <= SEND;
                         end if;
+                        
+                        if led_counter = 100000000 then
+                            led_6 <= not led_6; -- it does not stay here checked with led
+                            led_counter := 0;
+                        else
+                            led_counter := led_counter + 1;
+                        end if;
     
                     ----------------------------------------------------------------
                     -- SEND: stream normal beats until the second-last beat
@@ -317,14 +324,7 @@ begin
                             s2mm_state  <= DONE;                            
                             end_time    <= cycle_counter;
 
-                        end if;
-                        
-                        if led_counter = 100000000 then
-                            led_6 <= not led_6; -- it does not stay here checked with led
-                            led_counter := 0;
-                        else
-                            led_counter := led_counter + 1;
-                        end if;
+                        end if;                                                
     
                     ----------------------------------------------------------------
                     -- DONE: end of burst
@@ -341,6 +341,11 @@ begin
                         else
                             led_counter := led_counter + 1;
                         end if;
+                        
+                        if s_gpio_sw_o(0) = '0' then
+                            -- now testing sending multiple times
+                            s2mm_state <= IDLE;
+                        end if;                        
     
                 end case;
     
