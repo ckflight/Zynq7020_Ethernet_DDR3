@@ -40,7 +40,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake")
-  include("C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/ttcps/cmake_install.cmake")
 
 endif()
 

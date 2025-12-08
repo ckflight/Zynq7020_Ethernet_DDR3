@@ -1,7 +1,7 @@
 {
   "name": "tcp_perf_echo_server",
   "type": "HOST",
-  "platform": "zynq_arm_perf",
+  "platform": "zynq_perf",
   "domain": "standalone_ps7_cortexa9_0",
   "cpuInstance": "ps7_cortexa9_0",
   "cpuType": "cortex-a9",

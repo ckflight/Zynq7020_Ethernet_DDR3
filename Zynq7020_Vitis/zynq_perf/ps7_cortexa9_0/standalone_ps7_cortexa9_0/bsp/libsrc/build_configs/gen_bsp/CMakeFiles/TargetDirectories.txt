@@ -212,12 +212,6 @@ C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/sta
 C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/CMakeFiles/install.dir
 C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/local.dir
 C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/strip.dir
-C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/ttcps/CMakeFiles/edit_cache.dir
-C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/ttcps/CMakeFiles/rebuild_cache.dir
-C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/ttcps/CMakeFiles/list_install_components.dir
-C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/ttcps/CMakeFiles/install.dir
-C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/ttcps/CMakeFiles/install/local.dir
-C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/ttcps/CMakeFiles/install/strip.dir
 C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/lwip220/src/CMakeFiles/lwip220.dir
 C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/lwip220/src/CMakeFiles/edit_cache.dir
 C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq_perf/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/lwip220/src/CMakeFiles/rebuild_cache.dir

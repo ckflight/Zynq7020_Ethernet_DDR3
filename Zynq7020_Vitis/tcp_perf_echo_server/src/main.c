@@ -67,7 +67,7 @@ XGpio GpioTrigger;   // PS -> PL (bit 0 is start trigger)
 XGpio GpioStart;     // PL -> PS (start_time[31:0])
 XGpio GpioEnd;       // PL -> PS (end_time[31:0])
 
-#define FCLK0_FREQ_HZ 142857132.0
+#define FCLK0_FREQ_HZ       142857132.0
 
 #define PRINT_DDR_CONTENT   0
 

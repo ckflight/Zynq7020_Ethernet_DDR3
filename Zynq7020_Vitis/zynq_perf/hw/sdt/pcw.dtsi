@@ -151,7 +151,7 @@
 			xlnx,pcw-nor-grp-sram-cs0-enable = <0>;
 			xlnx,pcw-clk1-freq = <10000000>;
 			xlnx,pcw-mio-48-slew = "slow";
-			xlnx,pcw-m-axi-gp0-freqmhz = <125>;
+			xlnx,pcw-m-axi-gp0-freqmhz = <142>;
 			xlnx,pcw-ttc0-clk2-peripheral-divisor0 = <1>;
 			xlnx,pcw-mio-45-slew = "slow";
 			xlnx,pcw-mio-23-iotype = "HSTL , 1.8V";
@@ -392,10 +392,10 @@
 			xlnx,pcw-ddr-priority-readport-1 = "Low";
 			xlnx,pcw-ddr-priority-readport-2 = "Low";
 			xlnx,pcw-en-pjtag = <0>;
-			xlnx,pcw-fclk0-peripheral-divisor0 = <4>;
+			xlnx,pcw-fclk0-peripheral-divisor0 = <7>;
 			xlnx,pcw-nor-cs0-t-tr = <1>;
 			xlnx,pcw-ddr-priority-readport-3 = "Low";
-			xlnx,pcw-fclk0-peripheral-divisor1 = <2>;
+			xlnx,pcw-fclk0-peripheral-divisor1 = <1>;
 			xlnx,pcw-gpio-emio-gpio-io = "<Select>";
 			xlnx,pcw-smc-peripheral-valid = <0>;
 			xlnx,pcw-uart1-peripheral-enable = <1>;
@@ -455,7 +455,7 @@
 			xlnx,pcw-mio-51-slew = "slow";
 			xlnx,pcw-fclk2-peripheral-divisor1 = <1>;
 			xlnx,pcw-fpga-fclk2-enable = <0>;
-			xlnx,pcw-clk0-freq = <125000000>;
+			xlnx,pcw-clk0-freq = <142857132>;
 			xlnx,pcw-mio-47-slew = "slow";
 			xlnx,pcw-sdio-peripheral-divisor0 = <20>;
 			xlnx,pcw-use-expanded-iop = <0>;
@@ -489,7 +489,7 @@
 			xlnx,pcw-uiparam-ddr-dq-0-propogation-delay = <160>;
 			xlnx,pcw-mio-24-slew = "slow";
 			xlnx,pcw-mio-44-direction = "inout";
-			xlnx,pcw-fpga0-peripheral-freqmhz = <125>;
+			xlnx,pcw-fpga0-peripheral-freqmhz = <142>;
 			xlnx,pcw-mio-8-iotype = "LVCMOS , 1.8V";
 			xlnx,pcw-iopll-ctrl-fbdiv = <30>;
 			xlnx,pcw-mio-45-iotype = "LVCMOS , 1.8V";
@@ -638,7 +638,7 @@
 			xlnx,pcw-mio-22-direction = "in";
 			xlnx,pcw-mio-47-pullup = "enabled";
 			xlnx,pcw-apu-clk-ratio-enable = "6:2:1";
-			xlnx,pcw-act-fpga0-peripheral-freqmhz = <125>;
+			xlnx,pcw-act-fpga0-peripheral-freqmhz = <0x883d3ac>;
 			xlnx,pcw-p2f-dmac2-intr = <0>;
 			xlnx,pcw-fclk2-peripheral-clksrc = "IO , PLL";
 			xlnx,pcw-usb1-usb1-io = "<Select>";
@@ -730,7 +730,7 @@
 			xlnx,pcw-mio-29-pullup = "disabled";
 			xlnx,pcw-mio-30-pullup = "disabled";
 			xlnx,trace-internal-width = <2>;
-			xlnx,pcw-s-axi-hp0-freqmhz = <125>;
+			xlnx,pcw-s-axi-hp0-freqmhz = <142>;
 			xlnx,pcw-mio-7-direction = "out";
 			xlnx,pcw-i2c0-reset-enable = <1>;
 			xlnx,pcw-mio-53-slew = "slow";

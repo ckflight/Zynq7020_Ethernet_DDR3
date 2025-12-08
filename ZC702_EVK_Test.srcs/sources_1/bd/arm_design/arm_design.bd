@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x13499D26DA80B60E",
+      "boundary_crc": "0x13499D2656450AD4",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../ZC702_EVK_Test.gen/sources_1/bd/arm_design",
       "name": "arm_design",
@@ -243,7 +243,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "125000000",
+            "value": "142857132",
             "value_src": "user_prop"
           },
           "HAS_TKEEP": {
@@ -345,7 +345,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "125000000",
+            "value": "142857132",
             "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {
@@ -388,7 +388,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "125.000000"
+            "value": "142.857132"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -460,7 +460,7 @@
             "value": "1"
           },
           "PCW_CLK0_FREQ": {
-            "value": "125000000"
+            "value": "142857132"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -583,7 +583,7 @@
             "value": "0"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "125"
+            "value": "142"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"

@@ -1,4 +1,4 @@
-# 2025-12-01T15:38:26.127316400
+# 2025-12-08T14:35:45.330074700
 import vitis
 
 client = vitis.create_client()
@@ -7,12 +7,11 @@ client.set_workspace(path="Zynq7020_Vitis")
 platform = client.get_component(name="zynq_perf")
 status = platform.build()
 
-comp = client.get_component(name="lwip_tcp_perf_server")
-comp.build()
-
-client.delete_component(name="lwip_tcp_perf_server")
-
 domain = platform.get_domain(name="standalone_ps7_cortexa9_0")
+
+status = domain.set_lib(lib_name="lwip220", path="C:\Xilinx\2025.2\Vitis\data\embeddedsw\ThirdParty\sw_services\lwip220_v1_3")
+
+status = domain.set_config(option = "lib", param = "XILTIMER_en_interval_timer", value = "true", lib_name="xiltimer")
 
 status = domain.set_config(option = "lib", param = "lwip220_dhcp", value = "true", lib_name="lwip220")
 
@@ -36,30 +35,25 @@ status = domain.set_config(option = "lib", param = "lwip220_n_tx_descriptors", v
 
 status = platform.build()
 
-status = platform.build()
-
-comp = client.get_component(name="dma_ddr_interrupt_benchmark")
+comp = client.get_component(name="tcp_perf_echo_server")
 comp.build()
-
-comp = client.create_app_component(name="lwip_tcp_perf_server",platform = "$COMPONENT_LOCATION/../zynq_perf/export/zynq_perf/zynq_perf.xpfm",domain = "standalone_ps7_cortexa9_0",template = "lwip_tcp_perf_server")
-
-status = platform.build()
-
-comp = client.get_component(name="lwip_tcp_perf_server")
-comp.build()
-
-status = platform.build()
 
 comp.build()
 
-status = platform.build()
-
-comp = client.get_component(name="dma_ddr_interrupt_benchmark")
 comp.build()
 
-status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../../top_module.xsa")
+comp.build()
+
+comp = client.create_app_component(name="dma_ddr_interrupt_multi",platform = "$COMPONENT_LOCATION/../zynq_perf/export/zynq_perf/zynq_perf.xpfm",domain = "standalone_ps7_cortexa9_0",template = "hello_world")
 
 status = platform.build()
 
+comp = client.get_component(name="dma_ddr_interrupt_multi")
+comp.build()
+
+platform = client.get_component(name="zynq142mhz")
+status = platform.build()
+
+comp = client.get_component(name="multi_test142")
 comp.build()
 
