@@ -1,0 +1,4 @@
+domain_path: C:\Users\CK\Desktop\Vivado\ZC702_EVK\Zynq7020_Vitis\zynq125mhz\zynq_fsbl\zynq_fsbl_bsp
+app_src_dir: C:\Xilinx\2025.2\Vitis\data\embeddedsw\lib\sw_apps\zynq_fsbl
+template: zynq_fsbl
+lang: c

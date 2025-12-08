@@ -1,0 +1,4 @@
+C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq142mhz/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq142mhz/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq142mhz/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Users/CK/Desktop/Vivado/ZC702_EVK/Zynq7020_Vitis/zynq142mhz/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir
