@@ -56,7 +56,7 @@ lwip220_n_tx_descriptors = 512
 #define XPAR_XAXIDMA_0_DEVICE_ID    0
 
 #define DDR_BASE_ADDR               0x01000000
-#define FCLK0_FREQ_HZ               125000000.0
+#define FCLK0_FREQ_HZ               142000000.0
 
 #define TTC_CLK_HZ                  XPAR_XTTCPS_0_CLOCK_FREQ        // from xparameters.h   
 #define TTC_PRESCALER               6                               // divide by 2^6+1 = 128 (i have checked with usleep)
